@@ -1,0 +1,2570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pega</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+</head>
+
+<body>
+    <header>
+        <section class="header">
+            <div class="container">
+                <div class="header__topbar">
+                    <div class="header-logo">
+                        <a href="#">
+                            <svg width="95" height="40" viewBox="0 0 95 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.0056 18.3117H13.3995C21.642 18.3117 25.6531 14.6753 25.6531 9.00433C25.6531 4.06926 21.7743 0 13.4877 0H0V1.51515C3.08542 1.86147 3.5262 2.12121 3.5262 4.50216V25.8874C3.5262 28.2684 3.08542 28.5281 0 28.8745V30.3896H15.2949V28.8312C11.1957 28.5714 10.0056 28.0087 10.0056 25.5844V18.3117ZM10.0056 1.7316H11.9009C16.6613 1.7316 19.0415 4.80519 19.0415 9.1342C19.0415 13.7229 16.7935 16.4502 11.9009 16.4502H10.0056V1.7316Z"
+                                    fill="#111111" />
+                                <path
+                                    d="M38.3023 7.01299C32.2637 7.01299 27.4151 12.1212 27.4151 19.5238C27.4151 26.1905 31.6907 30.8225 38.0819 30.8225C43.1508 30.8225 46.3684 27.8788 47.5145 23.5931L46.8092 23.2035C45.2224 25.4545 43.2389 26.71 40.2417 26.71C35.9221 26.71 32.7485 23.1169 32.9248 17.0563H47.2941V16.0606C47.2941 10.8658 44.2087 7.01299 38.3023 7.01299ZM37.8615 8.61472C40.7265 8.61472 41.8285 11.3853 41.8285 15.4545H33.013C33.3656 11.4719 34.9524 8.61472 37.8615 8.61472Z"
+                                    fill="#111111" />
+                                <path
+                                    d="M59.3692 22.2078C64.8789 22.2078 68.8018 19.3939 68.8018 14.8052C68.8018 12.6407 67.5676 10.8225 66.0249 9.82684L69.1103 9.95671H70.9175V7.44589L63.4684 7.61905C62.3665 7.31602 61.1764 7.01299 59.5455 7.01299C54.0359 7.01299 49.9367 9.95671 49.9367 14.9351C49.9367 18.0087 51.6557 20 53.9918 21.1255C51.9642 22.381 49.8926 24.026 49.8926 26.5801C49.8926 28.355 50.9064 29.8701 52.6254 30.5195C50.5097 31.1688 48.4821 32.381 48.4821 34.5887C48.4821 38.0952 52.4931 40 58.9285 40C66.2453 40 71.7991 36.9697 71.7991 31.5152C71.7991 27.7056 69.1544 25.5844 64.0414 25.5844H54.9615C53.9918 25.5844 53.4188 25.0216 53.4188 24.1126C53.4188 23.2035 54.0799 22.2944 54.9174 21.5152C56.2838 21.9913 57.8265 22.2078 59.3692 22.2078ZM63.9533 31.0823C66.1131 31.0823 67.4354 31.7749 67.4354 33.6797C67.4354 36.9264 63.5566 38.355 59.237 38.355C55.0937 38.355 52.4931 36.5368 52.4931 33.6364C52.4931 32.5974 52.7576 31.7316 53.3306 31.0823H63.9533ZM59.6337 20.7792C57.0331 20.7792 55.799 17.7922 55.799 14.2424C55.799 10.8658 56.8127 8.48485 59.2811 8.48485C61.8376 8.48485 63.0277 11.4719 63.0277 14.9351C63.0277 18.3983 62.058 20.7792 59.6337 20.7792Z"
+                                    fill="#111111" />
+                                <path
+                                    d="M82.0412 27.3593C79.7051 27.3593 78.6473 25.7576 78.6473 23.5065C78.6473 21.0823 79.7933 20.0866 81.6445 19.3939L85.4352 17.8788V25.974C84.201 26.8831 83.3195 27.3593 82.0412 27.3593ZM91.5179 14.1126C91.5179 9.04762 88.4325 7.01299 82.7905 7.01299C77.8979 7.01299 74.1073 8.87446 74.1073 12.4675C74.1073 13.8961 74.8566 14.8052 76.0467 15.1948L79.7051 14.7186C79.4847 13.7662 79.3525 12.9004 79.3525 12.0346C79.3525 9.95671 80.19 8.39827 82.3057 8.39827C84.5977 8.39827 85.4352 10.1732 85.4352 12.6407V16.3203L78.7795 18.7013C75.4737 19.9134 72.7409 21.4286 72.7409 25.1515C72.7409 28.6147 75.1211 30.7359 78.6913 30.7359C81.8649 30.7359 84.1569 28.8312 85.5674 27.013C86.0082 29.3939 87.595 30.8225 89.9752 30.8225C92.0468 30.8225 93.7218 30 95 28.5281L94.7355 27.5758C94.2507 27.7922 93.6336 28.0087 92.9724 28.0087C91.8264 28.0087 91.5179 27.0563 91.5179 25.5844V14.1126Z"
+                                    fill="#111111" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header-user">
+                        <span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.6498 7.7C4.5267 7.7 2.7998 5.9731 2.7998 3.85C2.7998 1.7269 4.5267 0 6.6498 0C8.7729 0 10.4998 1.7269 10.4998 3.85C10.4998 5.9731 8.7729 7.7 6.6498 7.7ZM6.6498 0.7C4.9131 0.7 3.4998 2.1133 3.4998 3.85C3.4998 5.5867 4.9131 7 6.6498 7C8.3865 7 9.7998 5.5867 9.7998 3.85C9.7998 2.1133 8.3865 0.7 6.6498 0.7Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M12.25 14H1.05C0.4711 14 0 13.5289 0 12.95C0 12.9024 0.00980004 11.7705 0.8575 10.64C1.351 9.98202 2.0265 9.45912 2.8658 9.08672C3.8906 8.63102 5.1639 8.40002 6.65 8.40002C8.1361 8.40002 9.4094 8.63102 10.4342 9.08672C11.2735 9.45982 11.949 9.98202 12.4425 10.64C13.2902 11.7705 13.3 12.9024 13.3 12.95C13.3 13.5289 12.8289 14 12.25 14ZM6.65 9.10002C4.2091 9.10002 2.408 9.76712 1.4413 11.0292C0.7168 11.9749 0.7007 12.9416 0.7 12.9514C0.7 13.1432 0.8568 13.3 1.05 13.3H12.25C12.4432 13.3 12.6 13.1432 12.6 12.95C12.6 12.9416 12.5839 11.9749 11.8587 11.0292C10.8913 9.76712 9.0902 9.10002 6.65 9.10002Z"
+                                    fill="#555555" />
+                            </svg>
+                        </span>
+                        <span class="header-login">Đăng nhập</span>
+                    </div>
+                </div>
+
+                <div class="header__topnav">
+                    <ul class="header__topnav--menu">
+                        <li class="menu-item">
+                            <a href="#">
+                                <span class="home-page">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.8 10V6.47059H7.2V10H10.2V5.29412H12L6 0L0 5.29412H1.8V10H4.8Z"
+                                            fill="black" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                Tin nóng
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                Khám phá
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                Thời sự
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                Đời sống
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                Xã hội
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                Giải trí
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                Thể thao
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                Kinh tế
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                Pháp luật
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                Công nghệ
+                            </a>
+                        </li>
+                        <li class="menu-item" id="extend">
+                            <a href="#" class="open">
+                                <span class="menu-item-end">Tất cả</span>
+                                <span>
+                                    <svg width="20" height="14" viewBox="0 0 20 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 7C0 6.44772 0.447715 6 1 6H19C19.5523 6 20 6.44772 20 7C20 7.55228 19.5523 8 19 8H1C0.447715 8 0 7.55228 0 7Z"
+                                            fill="#AAAAAA" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 1C0 0.447715 0.447715 0 1 0H19C19.5523 0 20 0.447715 20 1C20 1.55228 19.5523 2 19 2H1C0.447715 2 0 1.55228 0 1Z"
+                                            fill="#AAAAAA" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 13C0 12.4477 0.447715 12 1 12H19C19.5523 12 20 12.4477 20 13C20 13.5523 19.5523 14 19 14H1C0.447715 14 0 13.5523 0 13Z"
+                                            fill="#AAAAAA" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <div class="menu-list" id="menu">
+                                <div class="menu-list-row">
+                                    <div class="menu-list-col" id="col">
+                                        <p class="menu-list-item">
+                                            <a href="#" title="" class="menu-list-title">Thời sự</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Xã hội</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Thế giới</a>
+                                        </p>
+                                    </div>
+                                    <div class="menu-list-col">
+                                        <p class="menu-list-item">
+                                            <a href="#" title="" class="menu-list-title">Đời sống giới trẻ</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Tình yêu</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Nóng trên mạng</a>
+                                        </p>
+                                    </div>
+                                    <div class="menu-list-col">
+                                        <p class="menu-list-item">
+                                            <a href="#" title="" class="menu-list-title">Giải trí</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Âm nhạc</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Điện ảnh</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Showbiz Việt</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Sao quốc tế</a>
+                                        </p>
+                                    </div>
+                                    <div class="menu-list-col">
+                                        <p class="menu-list-item">
+                                            <a href="#" title="" class="menu-list-title">Thể thao</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Bóng đá</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Quần vợt</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Bên lề Thể thao</a>
+                                        </p>
+                                    </div>
+                                    <div class="menu-list-col">
+                                        <p class="menu-list-item">
+                                            <a href="#" title="" class="menu-list-title">Kinh tế</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Thị trường</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Tài chính - Ngân hàng</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Chứng khoán</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Bất động sản</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Thế giới doanh nhân</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Câu chuyện doanh nghiệp</a>
+                                        </p>
+                                    </div>
+                                </div>
+            
+                                <div class="menu-list-row">
+                                    <div class="menu-list-col">
+                                        <p class="menu-list-item">
+                                            <a href="#" title="" class="menu-list-title">Pháp luật</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Hình sự</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">An ninh trật tự</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Hồ sơ vụ án</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Tư vấn luật</a>
+                                        </p>
+                                    </div>
+                                    <div class="menu-list-col">
+                                        <p class="menu-list-item">
+                                            <a href="#" title="" class="menu-list-title">Công nghệ</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">PC/Đồ chơi số</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Thiết bị di động</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Viễn thông - Internet</a>
+                                        </p>
+                                    </div>
+                                    <div class="menu-list-col">
+                                        <p class="menu-list-item">
+                                            <a href="#" title="" class="menu-list-title">Game</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Mobile game</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Game online</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Game offline</a>
+                                        </p>
+                                    </div>
+                                    <div class="menu-list-col">
+                                        <p class="menu-list-item">
+                                            <a href="#" title="" class="menu-list-title">Khám phá</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Khoa học</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Lịch sử</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Có thể bạn chưa biết</a>
+                                        </p>
+                                    </div>
+                                    <div class="menu-list-col">
+                                        <p class="menu-list-item">
+                                            <a href="#" title="" class="menu-list-title">Giáo dục</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Du học</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Học ngoại ngữ</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Gương mặt trẻ nổi bật</a>
+                                        </p>
+                                    </div>
+                                </div>
+            
+                                <div class="menu-list-row">
+                                    <div class="menu-list-col">
+                                        <p class="menu-list-item">
+                                            <a href="#" title="" class="menu-list-title">Sức khỏe - Y tế</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Dinh dưỡng</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Các bệnh thường gặp</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Đột phá y học</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Rèn luyện thể chất</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Nuôi con</a>
+                                        </p>
+                                    </div>
+                                    <div class="menu-list-col">
+                                        <p class="menu-list-item">
+                                            <a href="#" title="" class="menu-list-title">Sống</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Ẩm thực</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Du lịch</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Nhà đẹp</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Mua sắm - Tiêu dùng</a>
+                                        </p>
+                                    </div>
+                                    <div class="menu-list-col">
+                                        <p class="menu-list-item">
+                                            <a href="#" title="" class="menu-list-title">Ô tô xe máy</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Ô tô</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Xe máy</a>
+                                        </p>
+                                    </div>
+                                    <div class="menu-list-col">
+                                        <p class="menu-list-item">
+                                            <a href="#" title="" class="menu-list-title">Thư giãn</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Chuyện lạ</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Hài hước</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Quizz - Tử vi</a>
+                                        </p>
+                                    </div>
+                                    <div class="menu-list-col">
+                                        <p class="menu-list-item">
+                                            <a href="#" title="" class="menu-list-title">Z</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Làm đẹp</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Xu hướng</a>
+                                        </p>
+                                        <p class="menu-list-item">
+                                            <a href="#" title="">Quizz - Tử vi</a>
+                                        </p>
+                                    </div>
+                                </div>
+            
+                                <div class="menu-list-row menu-links">
+                                    <div class="menu-list-col">
+                                        <p class="menu-list-item">
+                                            <a href="#" title="" class="menu-list-title">Báo hay đọc</a>
+                                        </p>
+                                    </div>
+                                    <div class="menu-list-links">
+                                        <div class="links-item">
+                                            <a href="#" title="">
+                                                <img src="./images/Rectangle 180.png" alt="" class="links-image">
+                                            </a>
+                                            <p class="links-title">
+                                                <a href="#" title="">
+                                                    Kenh14.vn
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="links-item">
+                                            <a href="#" title="">
+                                                <img src="./images/Rectangle 2.png" alt="" class="links-image">
+                                            </a>
+                                            <p class="links-title">
+                                                <a href="#" title="">
+                                                    Afamily.vn
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="links-item">
+                                            <a href="#" title="">
+                                                <img src="./images/Rectangle 3.png" alt="" class="links-image">
+                                            </a>
+                                            <p class="links-title">
+                                                <a href="#" title="">
+                                                    Soha.vn
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="links-item">
+                                            <a href="#" title="">
+                                                <img src="./images/Rectangle 4.png" alt="" class="links-image">
+                                            </a>
+                                            <p class="links-title">
+                                                <a href="#" title="">
+                                                    Autopro
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="links-item">
+                                            <a href="#" title="">
+                                                <img src="./images/Rectangle 5.png" alt="" class="links-image">
+                                            </a>
+                                            <p class="links-title">
+                                                <a href="#" title="">
+                                                    CafeF
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="links-item">
+                                            <a href="#" title="">
+                                                <img src="./images/Rectangle6.png" alt="" class="links-image">
+                                            </a>
+                                            <p class="links-title">
+                                                <a href="#" title="">
+                                                    CafeBiz
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="links-item">
+                                            <a href="#" title="">
+                                                <img src="./images/Rectangle 7.png" alt="" class="links-image">
+                                            </a>
+                                            <p class="links-title">
+                                                <a href="#" title="">
+                                                    GameK
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="links-item">
+                                            <a href="#" title="">
+                                                <img src="./images/Rectangle 8.png" alt="" class="links-image">
+                                            </a>
+                                            <p class="links-title">
+                                                <a href="#" title="">
+                                                    GameK
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="links-item">
+                                            <a href="#" title="">
+                                                <img src="./images/Rectangle 9.png" alt="" class="links-image">
+                                            </a>
+                                            <p class="links-title">
+                                                <a href="#" title="">
+                                                    VnExpress
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="links-item">
+                                            <a href="#" title="">
+                                                <img src="./images/Rectangle 10.png" alt="" class="links-image">
+                                            </a>
+                                            <p class="links-title">
+                                                <a href="#" title="">
+                                                    Dân Trí
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="links-item">
+                                            <a href="#" title="">
+                                                <img src="./images/Rectangle 11.png" alt="" class="links-image">
+                                            </a>
+                                            <p class="links-title">
+                                                <a href="#" title="">
+                                                    Zing News
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- <div class="menu-list" id="menu">
+                    <div class="menu-list-row" >
+                        <div class="menu-list-col">
+                            <p class="menu-list-item">
+                                <a href="#" title="" class="menu-list-title">Thời sự</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Xã hội</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Thế giới</a>
+                            </p>
+                        </div>
+                        <div class="menu-list-col">
+                            <p class="menu-list-item">
+                                <a href="#" title="" class="menu-list-title">Đời sống giới trẻ</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Tình yêu</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Nóng trên mạng</a>
+                            </p>
+                        </div>
+                        <div class="menu-list-col">
+                            <p class="menu-list-item">
+                                <a href="#" title="" class="menu-list-title">Giải trí</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Âm nhạc</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Điện ảnh</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Showbiz Việt</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Sao quốc tế</a>
+                            </p>
+                        </div>
+                        <div class="menu-list-col">
+                            <p class="menu-list-item">
+                                <a href="#" title="" class="menu-list-title">Thể thao</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Bóng đá</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Quần vợt</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Bên lề Thể thao</a>
+                            </p>
+                        </div>
+                        <div class="menu-list-col">
+                            <p class="menu-list-item">
+                                <a href="#" title="" class="menu-list-title">Kinh tế</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Thị trường</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Tài chính - Ngân hàng</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Chứng khoán</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Bất động sản</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Thế giới doanh nhân</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Câu chuyện doanh nghiệp</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="menu-list-row">
+                        <div class="menu-list-col">
+                            <p class="menu-list-item">
+                                <a href="#" title="" class="menu-list-title">Pháp luật</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Hình sự</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">An ninh trật tự</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Hồ sơ vụ án</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Tư vấn luật</a>
+                            </p>
+                        </div>
+                        <div class="menu-list-col">
+                            <p class="menu-list-item">
+                                <a href="#" title="" class="menu-list-title">Công nghệ</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">PC/Đồ chơi số</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Thiết bị di động</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Viễn thông - Internet</a>
+                            </p>
+                        </div>
+                        <div class="menu-list-col">
+                            <p class="menu-list-item">
+                                <a href="#" title="" class="menu-list-title">Game</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Mobile game</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Game online</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Game offline</a>
+                            </p>
+                        </div>
+                        <div class="menu-list-col">
+                            <p class="menu-list-item">
+                                <a href="#" title="" class="menu-list-title">Khám phá</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Khoa học</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Lịch sử</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Có thể bạn chưa biết</a>
+                            </p>
+                        </div>
+                        <div class="menu-list-col">
+                            <p class="menu-list-item">
+                                <a href="#" title="" class="menu-list-title">Giáo dục</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Du học</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Học ngoại ngữ</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Gương mặt trẻ nổi bật</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="menu-list-row">
+                        <div class="menu-list-col">
+                            <p class="menu-list-item">
+                                <a href="#" title="" class="menu-list-title">Sức khỏe - Y tế</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Dinh dưỡng</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Các bệnh thường gặp</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Đột phá y học</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Rèn luyện thể chất</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Nuôi con</a>
+                            </p>
+                        </div>
+                        <div class="menu-list-col">
+                            <p class="menu-list-item">
+                                <a href="#" title="" class="menu-list-title">Sống</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Ẩm thực</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Du lịch</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Nhà đẹp</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Mua sắm - Tiêu dùng</a>
+                            </p>
+                        </div>
+                        <div class="menu-list-col">
+                            <p class="menu-list-item">
+                                <a href="#" title="" class="menu-list-title">Ô tô xe máy</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Ô tô</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Xe máy</a>
+                            </p>
+                        </div>
+                        <div class="menu-list-col">
+                            <p class="menu-list-item">
+                                <a href="#" title="" class="menu-list-title">Thư giãn</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Chuyện lạ</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Hài hước</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Quizz - Tử vi</a>
+                            </p>
+                        </div>
+                        <div class="menu-list-col">
+                            <p class="menu-list-item">
+                                <a href="#" title="" class="menu-list-title">Z</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Làm đẹp</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Xu hướng</a>
+                            </p>
+                            <p class="menu-list-item">
+                                <a href="#" title="">Quizz - Tử vi</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="menu-list-row menu-links">
+                        <div class="menu-list-col">
+                            <p class="menu-list-item">
+                                <a href="#" title="" class="menu-list-title">Báo hay đọc</a>
+                            </p>
+                        </div>
+                        <div class="menu-list-links">
+                            <div class="links-item">
+                                <a href="#" title="">
+                                    <img src="./images/Rectangle 180.png" alt="" class="links-image">
+                                </a>
+                                <p class="links-title">
+                                    <a href="#" title="">
+                                        Kenh14.vn
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="links-item">
+                                <a href="#" title="">
+                                    <img src="./images/Rectangle 2.png" alt="" class="links-image">
+                                </a>
+                                <p class="links-title">
+                                    <a href="#" title="">
+                                        Afamily.vn
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="links-item">
+                                <a href="#" title="">
+                                    <img src="./images/Rectangle 3.png" alt="" class="links-image">
+                                </a>
+                                <p class="links-title">
+                                    <a href="#" title="">
+                                        Soha.vn
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="links-item">
+                                <a href="#" title="">
+                                    <img src="./images/Rectangle 4.png" alt="" class="links-image">
+                                </a>
+                                <p class="links-title">
+                                    <a href="#" title="">
+                                        Autopro
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="links-item">
+                                <a href="#" title="">
+                                    <img src="./images/Rectangle 5.png" alt="" class="links-image">
+                                </a>
+                                <p class="links-title">
+                                    <a href="#" title="">
+                                        CafeF
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="links-item">
+                                <a href="#" title="">
+                                    <img src="./images/Rectangle6.png" alt="" class="links-image">
+                                </a>
+                                <p class="links-title">
+                                    <a href="#" title="">
+                                        CafeBiz
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="links-item">
+                                <a href="#" title="">
+                                    <img src="./images/Rectangle 7.png" alt="" class="links-image">
+                                </a>
+                                <p class="links-title">
+                                    <a href="#" title="">
+                                        GameK
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="links-item">
+                                <a href="#" title="">
+                                    <img src="./images/Rectangle 8.png" alt="" class="links-image">
+                                </a>
+                                <p class="links-title">
+                                    <a href="#" title="">
+                                        GameK
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="links-item">
+                                <a href="#" title="">
+                                    <img src="./images/Rectangle 9.png" alt="" class="links-image">
+                                </a>
+                                <p class="links-title">
+                                    <a href="#" title="">
+                                        VnExpress
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="links-item">
+                                <a href="#" title="">
+                                    <img src="./images/Rectangle 10.png" alt="" class="links-image">
+                                </a>
+                                <p class="links-title">
+                                    <a href="#" title="">
+                                        Dân Trí
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="links-item">
+                                <a href="#" title="">
+                                    <img src="./images/Rectangle 11.png" alt="" class="links-image">
+                                </a>
+                                <p class="links-title">
+                                    <a href="#" title="">
+                                        Zing News
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="ads">
+            <div class="banner">
+                <img src="./images/image 1.png" alt="">
+            </div>
+        </section>
+        <section class="top-content">
+            <div class="container">
+                <div class="left-content">
+                    <div class="left-content hotnews">
+                        <div class="hotnews-content">
+                            <h3>
+                                <a href="#">
+                                    Tin nóng
+                                </a>
+                            </h3>
+                            <a href="#" title="">
+                                <img src="./images/img.png" alt="">
+                            </a>
+                            <span>
+                                <a href="#">
+                                    Soha.vn · 1 giờ trước
+                                </a>
+                            </span>
+                            <div class="left-content title">
+                                <h2>
+                                    <a href="#" target="">
+                                        Nga, Bulgaria ghi nhận số ca tử vong do COVID-19 cao nhất từ trước tới nay
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="hotnews-subcontent">
+                            <div class="hotnews-subcontent content1">
+                                <a href="#" title="">
+                                    <img src="./images/img3.png" alt="">
+                                </a>
+                                <span>
+                                    <a href="#">
+                                        Vnexpress.net · 1 giờ trước
+                                    </a>
+                                </span>
+                                <div style="border-bottom: none;" class="left-content title">
+                                    <h2>
+                                        <a href="#" title="">
+                                            Luật sư Trump toát mồ hôi khi cáo buộc gian lận bầu cử
+                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="hotnews-subcontent content1">
+                                <a href="#" title="">
+                                    <img src="./images/img4.png" alt="">
+                                </a>
+                                <span>
+                                    <a href="#">
+                                        Kenh14.vn · 1 giờ trước
+                                    </a>
+                                </span>
+                                <div style="border-bottom: none;" class="left-content title">
+                                    <h2>
+                                        <a href="#" title="">
+                                            Giá điện giảm 10% từ kỳ ghi hoá đơn tháng 5
+                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-content topnews">
+                        <div class="topnews-content">
+                            <h3>
+                                <a href="#">
+                                    Top news
+                                </a>
+                            </h3>
+                            <a href="#" title="">
+                                <img src="./images/img2.png" alt="">
+                            </a>
+                            <span>
+                                <a href="#">
+                                    Soha · 1 giờ trước
+                                </a>
+                            </span>
+                            <div class="left-content title">
+                                <h2>
+                                    <a href="#" title="">
+                                        Những "bóng hồng" trong cuộc đời Bảo Đại: Nam Phương Hoàng hậu của Hoà Minzy khổ
+                                        từ MV đến ngoài đời, trong lịch sử "Hân Tuesday"không phải là "trùm cuối"
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="topnews-subcontent">
+                            <div class="topnews-subcontent content1">
+                                <a href="#" title="">
+                                    <img src="./images/img5.png" alt="">
+                                </a>
+                                <div class="left-content title">
+                                    <h2>
+                                        <a href="#" title="">
+                                            Clip 8 cảnh quay "gây sốc" đã bị cắt khỏi PARASITE ám ảnh và đen tối hơn bản
+                                            ngoài rạp ...
+                                        </a>
+                                    </h2>
+                                    <span>
+                                        <a href="#">
+                                            CafeF.vn · 1 giờ trước
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="topnews-subcontent content1">
+                                <a href="#">
+                                    <img src="./images/img6.png" alt="">
+                                </a>
+                                <div class="left-content title">
+                                    <h2>
+                                        <a href="#" title="">
+                                            Số ca Covid-19 cao kỷ lục, Ba Lan vẫn nới lỏng các biện pháp hạn chế
+                                        </a>
+                                    </h2>
+                                    <span>
+                                        <a href="#">
+                                            CafeBiz · 1 giờ trước
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="topnews-subcontent content1">
+                                <a href="#">
+                                    <img src="./images/img7.png" alt="">
+                                </a>
+                                <div class="left-content title">
+                                    <h2>
+                                        <a href="#" title="">
+                                            Số ca Covid-19 cao kỷ lục, Ba Lan vẫn nới lỏng các biện pháp hạn chế
+                                        </a>
+                                    </h2>
+                                    <span>
+                                        <a href="#">
+                                            Dân Trí · 1 giờ trước
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="topnews-subcontent content1">
+                                <a href="#" title="">
+                                    <img src="./images/img8.png" alt="">
+                                </a>
+                                <div class="left-content title">
+                                    <h2>
+                                        <a href="#" title="">
+                                            Quốc hội đồng ý 'giải cứu' Vietnam Airlines do ảnh hưởng của COVID-19
+                                        </a>
+                                    </h2>
+                                    <span>
+                                        <a href="#">
+                                            Dân Trí · 1 giờ trước
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <d  iv class="right-content">
+                        <img src="./images/ads.png" alt="">
+                    </d>
+                </div>
+        </section>
+        <section class="next-content">
+            <div class="container">
+                <div class="next-content1">
+                    <div class="next-content-left">
+                        <div class="mynews">
+                            <h3>
+                                <a href="#">
+                                    Tin của bạn
+                                </a>
+                            </h3>
+                            <div class="mynews-items">
+                                <div class="mynews-first">
+                                    <a href="#" title="">
+                                        <img src="./images/img9.png" alt="">
+                                    </a>
+                                    <div class="mynews-first-content">
+                                        <div class="next-content-left title">
+                                            <h4>
+                                                <a href="#">
+                                                    Xã Hội
+                                                </a>
+                                            </h4>
+                                            <h2>
+                                                <a href="#" title="">
+                                                    Người dân thôn Đông Cứu phấn khởi trong đêm dỡ cách ly, Hà Nội không
+                                                    còn ổ dịch Covid-19
+                                                </a>
+                                            </h2>
+                                            <p>Đến 12h ngày 16/4, Việt Nam ghi nhận số ca mắc COVID-19 là 268, trong đó
+                                                171 bệnh nhận khỏi bệnh.</p>
+                                            <span>
+                                                <a href="#">
+                                                    Dân Trí · 1 giờ trước
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>      
+                                </div>
+
+                                <div class="mynews-first">
+                                    <a href="#" title="">
+                                        <img src="./images/img10.png" alt="" class="cndb-image">
+                                        <div class="cndb">
+                                            
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="0.5" y="1" width="12" height="12" rx="6" stroke="white" stroke-opacity="0.5"/>
+                                                    <rect x="3" y="3.5" width="7" height="7" rx="3.5" fill="white" class="cndb1">
+                                                    </svg>
+                                            
+                                                
+                                            <a href="#" title="">
+                                                cập nhật Diễn biến
+                                            </a>        
+                                        </div>
+                                    </a>
+                                    <div class="mynews-first-content content2">
+                                        <div class="next-content-left title title2">
+                                            <h4>
+                                                <a href="#">
+                                                    Thời sự
+                                                </a>
+                                            </h4>
+                                            <h2>
+                                                <a href="#" title="">
+                                                    Phát hiện 24 hành khách mắc Covid-19 trên cùng một chuyến bay từ Nga về nước
+                                                </a>
+                                            </h2>
+                                            <p>Đến 12h ngày 16/4, Việt Nam ghi nhận số ca mắc COVID-19 là 268, trong đó
+                                                171 bệnh nhận khỏi bệnh.</p>
+                                            <span>
+                                                <a href="#">
+                                                    Soha · 1 giờ trước
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="next-content-left sub-title">
+                                            <div class="image-title">
+                                                <h2>
+                                                    <a href="#" title="">
+                                                        Chuyện 10 người Việt, trong đó có cựu chiến binh 70 tuổi, tình nguyện hiến phổi cứu người
+                                                    </a>
+                                                </h2>
+                                            </div>
+                                            <a href="#" title="">
+                                                <img src="./images/img13.png" alt="" class="image-subtitle">
+                                            </a>
+                                        </div>  
+                                        <div class="next-content-left sub-title">
+                                            <div class="image-title">
+                                                <h2>
+                                                    <a href="#" title="">
+                                                        Người dân thôn Đông Cứu khóc ròng do mất hết mối hàng từ dịch Covid-19
+                                                    </a>
+                                                </h2>
+                                            </div>
+                                            <a href="#" title="">
+                                                <img src="./images/img14.png" alt="" class="image-subtitle">
+                                            </a>
+                                        </div>  
+                                        <div class="next-content-left sub-title">
+                                            <div class="image-title">
+                                                <h2>
+                                                    <a href="#" title="">
+                                                        Thêm 8 bệnh nhân Covid-19 được công bố khỏi bệnh, Việt Nam chữa trị thành công 90%
+                                                    </a>
+                                                </h2>
+                                            </div>
+                                            <a href="#" title="">
+                                                <img src="./images/img15.png" alt="" class="image-subtitle">
+                                            </a>
+                                        </div>  
+                                    </div> 
+                                </div>      
+                            </div>
+
+                                <div class="mynews-first">
+                                    <a href="#" title="">
+                                        <img src="./images/img11.png" alt="">
+                                    </a>
+                                    <div class="mynews-first-content">
+                                        <div class="next-content-left title">
+                                            <h4>
+                                                <a href="#">
+                                                    Xã Hội
+                                                </a>
+                                            </h4>
+                                            <h2>
+                                                <a href="#" title="">
+                                                    Video: Cận cảnh 2 tòa nhà sừng sững vi phạm trật tự xây dựng của 'Đường Nhuệ'
+                                                </a>
+                                            </h2>
+                                            <p>Mặc dù vi phạm trật tự xây dựng, bị lập biên bản xử phạt nhưng hai tòa nhà của Đường 'Nhuệ'</p>
+                                            <span>
+                                                <a href="#">
+                                                    Kenh14.vn · 1 giờ trước
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>      
+                                </div>
+
+                                <div style="border-bottom: none;" class="mynews-first">
+                                    <a href="#" title="">
+                                        <img src="./images/img12.png" alt="">
+                                    </a>
+                                    <div class="mynews-first-content">
+                                        <div class="next-content-left title">
+                                            <h4>
+                                                <a href="#">
+                                                    Xã Hội
+                                                </a>
+                                            </h4>
+                                            <h2>
+                                                <a href="#" title="">
+                                                    Lén lút hoạt động trong thời gian cách ly, 7 cơ sở bị phạt hơn 70 triệu đồng
+                                                </a>
+                                            </h2>
+                                            <p>Mỹ trải qua hai tuần đau thương, chứng kiến số ca nhiễm và số người thiệt mạng vì COVID-19 ...</p>
+                                            <span>
+                                                <a href="#">
+                                                    CafeF · 1 giờ trước
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>      
+                                </div>
+                        </div> 
+                        
+                        <div class="tlq">
+                            <div class="tlq-title">
+                                <a href="#" title="">Tin liên quan</a>
+                                <a href="#" title=""><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2908 0.209209C10.5697 0.488155 10.5697 0.940416 10.2908 1.21936L1.71936 9.79079C1.44042 10.0697 0.988155 10.0697 0.709209 9.79079C0.430263 9.51184 0.430263 9.05958 0.709209 8.78064L9.28064 0.209209C9.55958 -0.0697365 10.0118 -0.0697365 10.2908 0.209209Z" fill="#AAAAAA"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.709209 0.209209C0.988155 -0.0697365 1.44042 -0.0697365 1.71936 0.209209L10.2908 8.78064C10.5697 9.05958 10.5697 9.51184 10.2908 9.79079C10.0118 10.0697 9.55958 10.0697 9.28064 9.79079L0.709209 1.21936C0.430263 0.940416 0.430263 0.488155 0.709209 0.209209Z" fill="#AAAAAA"/>
+                                    </svg></a>
+                                    
+                            </div>
+
+                            <div class="tlq-content">
+                                <div class="tlq-content1">
+                                    <a href="#" title="">
+                                        <img src="./images/image 16.png" alt="">
+                                    </a>
+                                    <a href="#" title="">
+                                        Hoa khôi tiếp viên Vietnam Airlines: Không hở thì thôi, chứ hở là phải "xịt máu mũi"
+                                    </a>
+                                </div>
+                                <div class="tlq-content1">
+                                    <a href="#" title="">
+                                        <img src="./images/image 17.png" alt="">
+                                    </a>
+                                    <a href="#" title="">
+                                        Người mẹ sinh 14 đứa con ở Hà Nội, 4 đứa vướng vào lao lý: “Cuộc đời này tôi chưa thấy ai khổ như mình”
+                                    </a>
+                                </div>
+                                <div class="tlq-content1">
+                                    <a href="#" title="">
+                                        <img src="./images/image 18.png" alt="">
+                                    </a>
+                                    <a href="#" title="">
+                                        Hyun Bin - Son Ye Jin lộ bằng chứng bí mật hẹn hò bất chấp lịch trình bận rộn, địa điểm càng gây choáng hơn
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="fashion">
+                            <div class="fashion-image">
+                                <a href="#" title="">
+                                    <img src="./images/img19.png" alt="">
+                                </a>
+                                <div class="fashion-image-slideshow">
+                                    <div class="slideshow-item">
+                                        
+                                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3H3.5V2H12C12.8284 2 13.5 2.67157 13.5 3.5V12H12.5V3.5C12.5 3.22386 12.2761 3 12 3Z" fill="#888888"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1H5.5V0H14C14.8284 0 15.5 0.671573 15.5 1.5V10H14.5V1.5C14.5 1.22386 14.2761 1 14 1Z" fill="#888888"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.15 5.1C1.84624 5.1 1.6 5.34624 1.6 5.65V13.35C1.6 13.6538 1.84624 13.9 2.15 13.9H9.85C10.1538 13.9 10.4 13.6538 10.4 13.35V5.65C10.4 5.34624 10.1538 5.1 9.85 5.1H2.15ZM0.5 5.65C0.5 4.73873 1.23873 4 2.15 4H9.85C10.7613 4 11.5 4.73873 11.5 5.65V13.35C11.5 14.2613 10.7613 15 9.85 15H2.15C1.23873 15 0.5 14.2613 0.5 13.35V5.65Z" fill="#888888"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.075 7.3C3.92312 7.3 3.8 7.42312 3.8 7.575C3.8 7.72688 3.92312 7.85 4.075 7.85C4.22688 7.85 4.35 7.72688 4.35 7.575C4.35 7.42312 4.22688 7.3 4.075 7.3ZM2.7 7.575C2.7 6.81561 3.31561 6.2 4.075 6.2C4.83439 6.2 5.45 6.81561 5.45 7.575C5.45 8.33439 4.83439 8.95 4.075 8.95C3.31561 8.95 2.7 8.33439 2.7 7.575Z" fill="#888888"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.81109 8.01109C8.02588 7.7963 8.37412 7.7963 8.58891 8.01109L11.3389 10.7611C11.5537 10.9759 11.5537 11.3241 11.3389 11.5389C11.1241 11.7537 10.7759 11.7537 10.5611 11.5389L8.2 9.17782L2.53891 14.8389C2.32412 15.0537 1.97588 15.0537 1.76109 14.8389C1.5463 14.6241 1.5463 14.2759 1.76109 14.0611L7.81109 8.01109Z" fill="#888888"/>
+                                                </svg>
+                                            <span class="slide-title">
+                                                12 bức ảnh
+                                            </span>    
+                                        
+                                    </div>
+                                    <div class="slideshow-item">
+                                        
+                                            <svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.1742 6.15634C10.7917 6.54929 10.7917 7.45071 10.1742 7.84366L2.03688 13.022C1.37115 13.4456 0.5 12.9674 0.5 12.1783L0.5 1.82167C0.500001 1.03258 1.37115 0.554369 2.03688 0.978012L10.1742 6.15634Z" fill="#888888"/>
+                                                </svg>
+                                            <span class="slide-title">
+                                                Xem slideshow
+                                            </span>   
+                                       
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="fashion-content">
+                                <h3>
+                                    <a href="#" title="" class="fashion-content-tt">
+                                        THỜI TRANG
+                                    </a>
+                                </h3>
+                                <p>
+                                    <a href="#" title="" class="fashion-content-title">
+                                        14 mẫu váy liền mỏng mát mà cực kỳ sang chảnh giá chỉ từ 300k: Nàng công sở tha hồ điệu đà trong Hè này
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="#" title="" class="fashion-content-subtitle">
+                                        Những thiết kế váy liền xinh xắn dưới đây sẽ giúp nàng công sở tỏa sáng mọi lúc mọi nơi trong Hè này.
+                                    </a>
+                                </p>
+                                <p class="fashion-content-info">
+                                    Kenh14.vn · 1 giờ trước
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mynews-items mynews-items2">
+                            <div class="mynews-first">
+                                <a href="#" title="">
+                                    <img src="./images/img20.png" alt="">
+                                </a>
+                                <div class="mynews-first-content">
+                                    <div class="next-content-left title">
+                                        <h4>
+                                            <a href="#">
+                                                thế giới
+                                            </a>
+                                        </h4>
+                                        <h2 class="box">
+                                            <a href="#" title="">
+                                                Nga sắp có vaccine chống dịch Covid-19
+                                            </a>
+                                        </h2>
+                                        <p>Mỹ trải qua hai tuần đau thương, chứng kiến số ca nhiễm và số người thiệt mạng vì COVID-19 ...</p>
+                                        <span>
+                                            <a href="#">
+                                                Người Lao Động · 1 giờ trước
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>      
+                            </div>
+                            <div class="mynews-first">
+                                <a href="#" title="">
+                                    <img src="./images/img21.png" alt="">
+                                </a>
+                                <div class="mynews-first-content">
+                                    <div class="next-content-left title">
+                                        <h4>
+                                            <a href="#">
+                                                Xã Hội
+                                            </a>
+                                        </h4>
+                                        <h2 class="box">
+                                            <a href="#" title="">
+                                                Bắt quả tang doanh nghiệp múc đất của dân để làm dự án
+                                            </a>
+                                        </h2>
+                                        <p>Cơ quan chức năng ở Quảng Trị vừa bắt quả tang công ty Hợp Thịnh múc đất trên diện tích thuộc nhà dân bên cạnh để thi công dự án n...</p>
+                                        <span>
+                                            <a href="#">
+                                                Kenh14.vn · 1 giờ trước
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>      
+                            </div>
+                            <div class="mynews-first">
+                                <a href="#" title="">
+                                    <img src="./images/img22.png" alt="">
+                                </a>
+                                <div class="mynews-first-content">
+                                    <div class="next-content-left title">
+                                        <h4>
+                                            <a href="#">
+                                                THỜI SỰ
+                                            </a> 
+                                        </h4>
+                                        <h2>
+                                            <a href="#" title="">
+                                                Chiều 13/5, không có ca mắc mới COVID-19, chỉ còn 19 bệnh nhân đang điều trị
+                                            </a>
+                                        </h2>
+                                        <p>Bản tin lúc 18h00 ngày 13/5 của Ban Chỉ đạo Quốc gia Phòng chống dịch COVID-19 cho biết, không có ca..</p>
+                                        <span>
+                                            <a href="#">
+                                                Soha · 1 giờ trước
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>      
+                            </div>   
+                        </div>
+
+                        <div class="fashion fashion2">
+                            <div class="fashion-image">
+                                <a href="#" title="">
+                                    <img src="./images/img23.png" alt="">
+                                </a>
+                                <div class="fashion-image-slideshow">
+                                    <div class="slideshow-item1">
+                                        <div class="a1">
+                                            <a href="#" title="">
+                                                <img src="./images/image 24.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="a1">
+                                            <a href="#" title="">
+                                                <img src="./images/image 25.png" alt="">
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="slideshow-item">
+                                        
+                                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3H3.5V2H12C12.8284 2 13.5 2.67157 13.5 3.5V12H12.5V3.5C12.5 3.22386 12.2761 3 12 3Z" fill="#888888"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1H5.5V0H14C14.8284 0 15.5 0.671573 15.5 1.5V10H14.5V1.5C14.5 1.22386 14.2761 1 14 1Z" fill="#888888"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.15 5.1C1.84624 5.1 1.6 5.34624 1.6 5.65V13.35C1.6 13.6538 1.84624 13.9 2.15 13.9H9.85C10.1538 13.9 10.4 13.6538 10.4 13.35V5.65C10.4 5.34624 10.1538 5.1 9.85 5.1H2.15ZM0.5 5.65C0.5 4.73873 1.23873 4 2.15 4H9.85C10.7613 4 11.5 4.73873 11.5 5.65V13.35C11.5 14.2613 10.7613 15 9.85 15H2.15C1.23873 15 0.5 14.2613 0.5 13.35V5.65Z" fill="#888888"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.075 7.3C3.92312 7.3 3.8 7.42312 3.8 7.575C3.8 7.72688 3.92312 7.85 4.075 7.85C4.22688 7.85 4.35 7.72688 4.35 7.575C4.35 7.42312 4.22688 7.3 4.075 7.3ZM2.7 7.575C2.7 6.81561 3.31561 6.2 4.075 6.2C4.83439 6.2 5.45 6.81561 5.45 7.575C5.45 8.33439 4.83439 8.95 4.075 8.95C3.31561 8.95 2.7 8.33439 2.7 7.575Z" fill="#888888"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.81109 8.01109C8.02588 7.7963 8.37412 7.7963 8.58891 8.01109L11.3389 10.7611C11.5537 10.9759 11.5537 11.3241 11.3389 11.5389C11.1241 11.7537 10.7759 11.7537 10.5611 11.5389L8.2 9.17782L2.53891 14.8389C2.32412 15.0537 1.97588 15.0537 1.76109 14.8389C1.5463 14.6241 1.5463 14.2759 1.76109 14.0611L7.81109 8.01109Z" fill="#888888"/>
+                                                </svg>
+                                            <span class="slide-title">
+                                                12 bức ảnh
+                                            </span>    
+                                        
+                                    </div>
+                                    <div class="slideshow-item">
+                                        
+                                            <svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.1742 6.15634C10.7917 6.54929 10.7917 7.45071 10.1742 7.84366L2.03688 13.022C1.37115 13.4456 0.5 12.9674 0.5 12.1783L0.5 1.82167C0.500001 1.03258 1.37115 0.554369 2.03688 0.978012L10.1742 6.15634Z" fill="#888888"/>
+                                                </svg>
+                                            <span class="slide-title">
+                                                Xem slideshow
+                                            </span>   
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="fashion-content">
+                                <h3>
+                                    <a href="#" title="" class="fashion-content-tt">
+                                        THỜI TRANG
+                                    </a>
+                                </h3>
+                                <p>
+                                    <a href="#" title="" class="fashion-content-title">
+                                        Muốn biết “info” quần áo đẹp mua ở đâu, ngắm street style hội gái xinh sành mặc Instagram là bạn sẽ có ngay câu trả lời
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="#" title="" class="fashion-content-subtitle">
+                                        Muốn biết “info” quần áo đẹp mua ở đâu, ngắm street style hội gái xinh sành mặc Instagram là bạn sẽ có ngay câu trả lời
+                                    </a>
+                                </p>
+                                <p class="fashion-content-info">
+                                    Kenh14.vn · 1 giờ trước
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mynews-items mynews-items2">
+                            <div class="mynews-first">
+                                <a href="#" title="">
+                                    <img src="./images/img24.png" alt="">
+                                </a>
+                                <div class="mynews-first-content">
+                                    <div class="next-content-left title">
+                                        <h4>
+                                           <a href="#">
+                                            THỜI SỰ
+                                           </a> 
+                                        </h4>
+                                        <h2>
+                                            <a href="#" title="">
+                                                Quốc hội dự kiến ngày bầu cử đại biểu Quốc hội và Hội đồng nhân dân các cấp 2020
+                                            </a>
+                                        </h2>
+                                        <p>Đảng đoàn Quốc hội vừa họp cho ý kiến về “Đề án bầu cử đại biểu Quốc hội khóa XV và đại biểu Hội đồng nhân dân các cấp nhiệm k...</p>
+                                        <span>
+                                            <a href="#">
+                                                Soha · 1 giờ trước
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>      
+                            </div>
+                            <div class="mynews-first">
+                                <a href="#" title="">
+                                    <img src="./images/img25.png" alt="">
+                                </a>
+                                <div class="mynews-first-content">
+                                    <div class="next-content-left title">
+                                        <h4>
+                                            <a href="#">
+                                                giải trí
+                                            </a>
+                                        </h4>
+                                        <h2 class="box">
+                                            <a href="#" title="">
+                                                Hồng Quế đăng ảnh tình cảm với Huỳnh Anh sau nghi vấn hẹn hò
+                                            </a>
+                                        </h2>
+                                        <p>Hồng Quế đăng ảnh tình cảm với Huỳnh Anh trước nghi vấn cả hai đang hẹn hò.</p>
+                                        <span>
+                                            <a href="#">
+                                                Kenh14.vn · 1 giờ trước
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>      
+                            </div>
+                            <div class="mynews-first">
+                                <a href="#" title="">
+                                    <img src="./images/img26.png" alt="">
+                                </a>
+                                <div class="mynews-first-content">
+                                    <div class="next-content-left title">
+                                        <h4>
+                                            <a href="#">
+                                                THỜI SỰ
+                                            </a> 
+                                        </h4>
+                                        <h2 class="box">
+                                            <a href="#" title="">
+                                                Hà Giang phong tỏa một bản có người đầu tiên mắc COVID-19
+                                            </a>
+                                        </h2>
+                                        <p>Lực lượng chức năng tỉnh Hà Giang phong tỏa bản Pín Tủng (xã Phố Là, huyện Đồng Văn), nơi nữ bệnh nhân COVID-19 thứ 268 sinh sống.</p>
+                                        <span>
+                                            <a href="#">
+                                                Dân Trí · 1 giờ trước
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>      
+                            </div>   
+                        </div>
+
+                        <div style="padding-top: -10px;" class="fashion fashion3">
+                            
+                            <div
+      style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+      class="swiper-container mySwiper2"
+    >
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/img27.png" />
+        </div>
+        <div class="swiper-slide">
+            <img src="./images/image 28.png" />
+        </div>
+        <div class="swiper-slide">
+            <img src="./images/image 29.png" />
+        </div>
+        <div class="swiper-slide">
+            <img src="./images/image 30.png" />
+        </div>
+        <div class="swiper-slide">
+            <img src="./images/image 31.png" />
+        </div>
+      </div>
+      
+    </div>
+    <div thumbsSlider="" class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/img27.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/image 28.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/image 29.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/image 30.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/image 31.png" />
+            </div>
+            <div style="color: #fff;" class="swiper-button-next"></div>
+      <div style="color: #fff;"x` class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+        <div style="margin-top: 15px;" class="fashion-content">
+            <h3>
+                <a href="#" title="" class="fashion-content-tt">
+                    du lịch
+                </a>
+            </h3>
+            <p>
+                <a href="#" title="" class="fashion-content-title">
+                    5 địa điểm trong nước bạn nhất định phải đặt chân đến một lần trong đời, báo chí quốc tế và du khách nước ngoài không ít lần "xuýt xoa" ca ngợi
+                </a>
+            </p>
+            <p class="fashion-content-subtitle"> 
+                Không có thời điểm nào phù hợp và tuyệt vời hơn lúc này để bạn khám phá và tận hưởng vẻ đẹp tuyệt vời của các tỉnh, thành phố của Việt Nam.
+            </p>
+            <p class="fashion-content-info">
+                Kenh14.vn · 1 giờ trước
+            </p>
+        </div>
+    </div>
+    <div class="mynews-items mynews-items3">
+        <div class="mynews-first">
+            <a href="#" title="">
+                <img src="./images/img32.png" alt="">
+            </a>
+            <div class="mynews-first-content">
+                <div class="next-content-left title">
+                    <h4>
+                        <a href="#">
+                            xã hội
+                        </a> 
+                    </h4>
+                    <h2>
+                        <a href="#" title="">
+                            Không còn cách ly xã hội, Quảng Ngãi vẫn tiếp tục đóng cửa quán bar, tụ điểm karaoke
+                        </a>
+                    </h2>
+                    <p>Dù không thuộc nhóm tỉnh, thành nguy cơ cao phải thực hiện cách ly xã hội đến 22/4 hoặc 30/4 nhưng Quảng Ngãi vẫn quyết định tiếp ...</p>
+                    <span>
+                        <a href="#">
+                            Soha · 1 giờ trước
+                        </a>
+                    </span>
+                </div>
+            </div>      
+        </div>
+        <div class="mynews-first">
+            <a href="#" title="">
+                <img src="./images/img33.png" alt="">
+            </a>
+            <div class="mynews-first-content">
+                <div class="next-content-left title">
+                    <h4>
+                        <a href="#">
+                            kinh doanh
+                        </a>
+                    </h4>
+                    <h2 style="height: 52px;">
+                        <a href="#" title="">
+                            Giá dầu giảm thê thảm: PVN nhận định gì?
+                        </a>
+                    </h2>
+                    <p>Theo Petrovietnam, đã đến lúc Chính phủ và các bộ, ngành phải có những giải pháp khẩn cấp, quyết liệt hơn để hỗ trợ, tháo gỡ khó khă...</p>
+                    <span>
+                        <a href="#">
+                            CafeBiz · 1 giờ trước
+                        </a>
+                    </span>
+                </div>
+            </div>      
+        </div>
+        <div class="mynews-first">
+            <a href="#" title="">
+                <img src="./images/img34.png" alt="">
+            </a>
+            <div class="mynews-first-content">
+                <div class="next-content-left title">
+                    <h4>
+                        <a href="#">
+                            thế giới
+                        </a>
+                    </h4>
+                    <h2>
+                        <a href="#" title="">
+                            Hành vi phi pháp của Trung Quốc trên Biển Đông xuất phát từ bế tắc ngoại giao ASEAN
+                        </a>
+                    </h2>
+                    <p class="box3">Chuyên gia cho rằng, những hành động phi pháp gần đây tiếp tục thể hiện dã tâm độc chiếm Biển Đông của Trung Quốc và bộc lộ</p>
+                    <span style="margin-bottom: -10px;">
+                        <a href="#">
+                            Soha · 1 giờ trước
+                        </a>
+                    </span>
+                </div>
+            </div>      
+        </div>   
+    </div>
+
+    <div class="fashion fashion4">
+        <div class="fashion-image">
+            <a href="#" title="">
+                <img src="./images/img35.png" alt="">
+            </a>
+            <div class="fashion-image-slideshow">
+                <div class="slideshow-item">
+                    
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3H3.5V2H12C12.8284 2 13.5 2.67157 13.5 3.5V12H12.5V3.5C12.5 3.22386 12.2761 3 12 3Z" fill="#888888"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1H5.5V0H14C14.8284 0 15.5 0.671573 15.5 1.5V10H14.5V1.5C14.5 1.22386 14.2761 1 14 1Z" fill="#888888"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.15 5.1C1.84624 5.1 1.6 5.34624 1.6 5.65V13.35C1.6 13.6538 1.84624 13.9 2.15 13.9H9.85C10.1538 13.9 10.4 13.6538 10.4 13.35V5.65C10.4 5.34624 10.1538 5.1 9.85 5.1H2.15ZM0.5 5.65C0.5 4.73873 1.23873 4 2.15 4H9.85C10.7613 4 11.5 4.73873 11.5 5.65V13.35C11.5 14.2613 10.7613 15 9.85 15H2.15C1.23873 15 0.5 14.2613 0.5 13.35V5.65Z" fill="#888888"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.075 7.3C3.92312 7.3 3.8 7.42312 3.8 7.575C3.8 7.72688 3.92312 7.85 4.075 7.85C4.22688 7.85 4.35 7.72688 4.35 7.575C4.35 7.42312 4.22688 7.3 4.075 7.3ZM2.7 7.575C2.7 6.81561 3.31561 6.2 4.075 6.2C4.83439 6.2 5.45 6.81561 5.45 7.575C5.45 8.33439 4.83439 8.95 4.075 8.95C3.31561 8.95 2.7 8.33439 2.7 7.575Z" fill="#888888"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.81109 8.01109C8.02588 7.7963 8.37412 7.7963 8.58891 8.01109L11.3389 10.7611C11.5537 10.9759 11.5537 11.3241 11.3389 11.5389C11.1241 11.7537 10.7759 11.7537 10.5611 11.5389L8.2 9.17782L2.53891 14.8389C2.32412 15.0537 1.97588 15.0537 1.76109 14.8389C1.5463 14.6241 1.5463 14.2759 1.76109 14.0611L7.81109 8.01109Z" fill="#888888"/>
+                            </svg>
+                        <span class="slide-title">
+                            12 bức ảnh
+                        </span>    
+                    
+                </div>
+                <div class="slideshow-item">
+                    
+                        <svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.1742 6.15634C10.7917 6.54929 10.7917 7.45071 10.1742 7.84366L2.03688 13.022C1.37115 13.4456 0.5 12.9674 0.5 12.1783L0.5 1.82167C0.500001 1.03258 1.37115 0.554369 2.03688 0.978012L10.1742 6.15634Z" fill="#888888"/>
+                            </svg>
+                        <span class="slide-title">
+                            Xem slideshow
+                        </span>   
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="fashion-content">
+            <h3>
+                <a href="#" title="" class="fashion-content-tt">
+                    THỜI TRANG
+                </a>
+            </h3>
+            <p>
+                <a href="#" title="" class="fashion-content-title">
+                    Muốn biết “info” quần áo đẹp mua ở đâu, ngắm street style hội gái xinh sành mặc Instagram là bạn sẽ có ngay câu trả lời
+                </a>
+            </p>
+            <p>
+                <a href="#" title="" class="fashion-content-subtitle">
+                    Ngoài việc học theo cách mix đồ từ hội mặc đẹp Instagram, bạn sẽ còn biết được cả nơi mua các item làm nên outfit trendy hết cỡ. Bật mí là toàn đồ local brand Việt thôi!
+                </a>
+            </p>
+            <p class="fashion-content-info">
+                Kenh14.vn · 1 giờ trước
+            </p>
+        </div>
+    </div>
+
+    <div class="mynews-items mynews-items4">
+        <div class="mynews-first">
+            <a href="#" title="">
+                <img src="./images/img36.png" alt="">
+            </a>
+            <div class="mynews-first-content">
+                <div class="next-content-left title">
+                    <div class="dtt">
+                        
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect x="0.5" width="16" height="17" fill="url(#pattern0)"/>
+                                <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0" transform="translate(-1.15625) scale(0.0625 0.0588235)"/>
+                                </pattern>
+                                <image id="image0" width="35" height="17" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAARCAYAAABXaxX/AAACzUlEQVRIDcVWXUgUURT+7s64uu5qqVTMrktlrmgkJloUPVSm4IMURQ9K2VsFQg+99wNC+NRrvUUSBEm9GBgkbkpQVIboUkb+0u7OzBotZqvb4uzcuLPNNrU3tU1qXs65537nOx/nnjszRJblEzab7TKltApALv7jQ8zasizXEUJuAKgHYDPj/9KmxZhFFUXpANAFoNCMrZdd0JYR+rqIna6NXMoMMQwVDoe9hJABQoiPm5VFMEkpTgUG8SEew9O9LRBIZmnucXg8nqDb7a4AMJhFXW7KlcnXGIoqmIl/weTSAhfDFWMiJUk6DOChuc7WdssTuBV+b6Q7BRGevHwu1YpiWIYkSUcB3ANAuQyc4PjiPPo/hcFmhHXi0sRwGtVZXgeXkJNeW51VxTCwJEmt3wVZc7l+1/QoGl714UxgCPte9BozcnFrNdiEnC2thEZ1tI76EV1OZORnTlEGJBWglAqqqj4G0PAbiBFmt6U9MIR3i/PGmg3qNV89agqKEdM0tI35oVGKbQ4X7lQfQnn+j0u7ps4wVkJIUtO0FgCBlcSU5jnRW9uExhK3AWO3qEedRpmjEC5RRFFO6r06G4+hbewJEnoyTbdmMSzD6/XGRVFsBqCkGThOgZiD27sO4lxpJTbb89Dl24PG4T5cnw2gp6YBVc7Ue4Z18U0s1UFGs+ZjstYMhUK7BUHwAyiyxnk+G+L2wCBefv5obJ92l+Pqjlp0vH2GgaiMkf3HDcFsMysxLFFV1WpK6QCATTwRZuzC+HPcj8wYS9alR3XNcOfmgx2fPyqjqcRjQrMXwxgikUiZruv9AMrSjBbnZnAcnVMjRsQhiHhQcwS1hSUWxM9u1p0xaebm5lzJZLIbwDEAghlnVkks4a4yZQzpyS3bUeHcYN3O8P9ajMnIfkUIIZ0AKn8VZWJWs+smhhUKBoMOu91+QNf18wDYp6T4T+byG1yk4pB7FvWcAAAAAElFTkSuQmCC"/>
+                                </defs>
+                                </svg>
+                        
+                        <h4 class="dtt1"> 
+                            Được tài trợ
+                        </h4>
+                    </div>
+                    
+                    <h2 class="box">
+                        <a href="#" title="">
+                            Lãnh đạo Việt thoát đau đầu vì tiếng Anh sau 3 tháng học online
+                        </a>
+                    </h2>
+                    <p>Thời gian học tùy chọn từ 8-24h trên mọi thiết bị di động. Top giảng viên bản ngữ, hỗ trợ 24/7</p>
+                </div>
+            </div>      
+        </div>
+        <div class="mynews-first">
+            <a href="#" title="">
+                <img src="./images/img37.png" alt="">
+            </a>
+            <div class="mynews-first-content">
+                <div class="next-content-left title">
+                    <h4>
+                        <a href="#">
+                            kinh doanh
+                        </a>
+                    </h4>
+                    <h2>
+                        <a href="#" title="">
+                            Lén lút hoạt động trong thời gian cách ly, 7 cơ sở bị phạt hơn 70 triệu đồng
+                        </a>
+                    </h2>
+                    <p>Mỹ trải qua hai tuần đau thương, chứng kiến số ca nhiễm và số người thiệt mạng vì COVID-19 ...</p>
+                    <span>
+                        <a href="#">
+                            CafeF · 1 giờ trước
+                        </a>
+                    </span>
+                </div>
+            </div>      
+        </div>
+        <div class="mynews-first">
+            <a href="#" title="">
+                <img src="./images/img38.png" alt="">
+            </a>
+            <div class="mynews-first-content">
+                <div class="next-content-left title">
+                    <h4>
+                        <a href="#">
+                            THỜI SỰ
+                        </a> 
+                    </h4>
+                    <h2 class="box">
+                        <a href="#" title="">
+                            Bắt quả tang doanh nghiệp múc đất của dân để làm dự án
+                        </a>
+                    </h2>
+                    <p>Cơ quan chức năng ở Quảng Trị vừa bắt quả tang công ty Hợp Thịnh múc đất trên diện tích thuộc nhà dân bên cạnh để thi công dự án n...</p>
+                    <span>
+                        <a href="#">
+                            Soha · 1 giờ trước
+                        </a>
+                        <a href="#" class="cmt">
+                            <span class="space">
+                                ·
+                            </span> 
+                            <span>
+                                12
+                             </span> 
+                             <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.16667 10.7059C5.16667 10.4297 4.94281 10.2059 4.66667 10.2059H3.83333C2.26293 10.2059 1 8.94935 1 7.41176V3.29412C1 1.75653 2.26293 0.5 3.83333 0.5H12.1667C13.7371 0.5 15 1.75653 15 3.29412V7.41176C15 8.94935 13.7371 10.2059 12.1667 10.2059H8.41667C8.29522 10.2059 8.17793 10.2501 8.08668 10.3302L5.16667 12.8953V10.7059Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>  
+                        </a>
+                    </span>
+                </div>
+            </div>      
+        </div>   
+    </div>
+
+    <div class="fashion fashion4">
+        <div class="fashion-image">
+            <a href="#" title="">
+                <img src="./images/img39.png" alt="">
+            </a>
+            
+        </div>
+
+        <div class="fashion-content">
+            <div class="magazin">
+                <div class="magazin-image">
+                    <a href="#" title="" class="fashion-content-tt">
+                        <img src="./images/emagazine-logo 2.png" alt="">
+                    </a>
+                </div>
+                <p>
+                    <a href="#" title="" class="fashion-content-tt">
+                        GIẢI TRÍ
+                    </a>
+                </p>
+            </div>
+            <p>
+                <a href="#" title="" class="fashion-content-title">
+                    Ngắm nhan sắc 'không tuổi' của diễn viên Thư Kỳ
+                </a>
+            </p>
+            <p>
+                <a href="#" title="" class="fashion-content-subtitle">
+                    Diễn viên Thư Kỳ vừa đón sinh nhật tuổi 44, cô gia nhập làng giải trí năm 17 tuổi làm người mẫu, sau đó nổi tiếng khi tham gia đóng dòng phim cấp ba.                                    </a>
+            </p>
+            <p class="fashion-content-info">
+                Kenh14.vn · 1 giờ trước
+            </p>
+        </div>
+    </div>
+
+    <div class="mynews-items mynews-items5">
+        <div class="mynews-first">
+            <a href="#" title="">
+                <img src="./images/img40.png" alt="">
+            </a>
+            <div class="mynews-first-content">
+                <div class="next-content-left title">
+                    <h4>
+                        <a href="#">
+                            du lịch
+                        </a>
+                    </h4>
+                    <h2>
+                        <a href="#" title="">
+                            Hậu giãn cách xã hội, du lịch Hội An đang dần hồi sinh qua góc nhìn của phóng viên quốc tế
+                        </a>
+                    </h2>
+                    <p>Tại Hội An, các doanh nghiệp phụ thuộc vào du khách nước ngoài đang dần thay đổi để thu hút cả khách ...</p>
+                    <span>
+                        <a href="#">
+                            Kenh14.vn · 1 giờ trước
+                        </a>
+                        <a href="#" class="cmt">
+                            <span class="space">
+                                ·
+                            </span> 
+                            <span>
+                                12
+                             </span> 
+                             <svg style="margin-bottom: -4px;
+                             margin-left: 4px;" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.16667 10.7059C5.16667 10.4297 4.94281 10.2059 4.66667 10.2059H3.83333C2.26293 10.2059 1 8.94935 1 7.41176V3.29412C1 1.75653 2.26293 0.5 3.83333 0.5H12.1667C13.7371 0.5 15 1.75653 15 3.29412V7.41176C15 8.94935 13.7371 10.2059 12.1667 10.2059H8.41667C8.29522 10.2059 8.17793 10.2501 8.08668 10.3302L5.16667 12.8953V10.7059Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>  
+                        </a>
+                    </span>
+                </div>
+            </div>      
+        </div> 
+        <div class="mynews-first">
+            <a href="#" title="">
+                <img src="./images/img41.png" alt="">
+            </a>
+            <div class="mynews-first-content">
+                <div class="next-content-left title">
+                    <h4>
+                        <a href="#">
+                            THỜI SỰ
+                        </a> 
+                    </h4>
+                    <h2 class="box5">
+                        <a href="#" title="">
+                            Chính phủ yêu cầu chuẩn bị tái khởi động thị trường khách du lịch quốc tế, thị trường du lịch Việt Nam lại chuẩn bị nhộn nhịp trở lại
+                        </a>
+                    </h2>
+                    <p>Cơ quan chức năng ở Quảng Trị vừa bắt quả tang công ty Hợp Thịnh múc đất trên diện tích thuộc nhà dân ...</p>
+                    <span>
+                        <a href="#">
+                            Soha · 1 giờ trước
+                        </a>
+                        <a href="#" class="cmt">
+                            <span class="space">
+                                ·
+                            </span> 
+                            <span>
+                                12
+                             </span> 
+                             <svg style="margin-bottom: -4px;
+                             margin-left: 4px;" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.16667 10.7059C5.16667 10.4297 4.94281 10.2059 4.66667 10.2059H3.83333C2.26293 10.2059 1 8.94935 1 7.41176V3.29412C1 1.75653 2.26293 0.5 3.83333 0.5H12.1667C13.7371 0.5 15 1.75653 15 3.29412V7.41176C15 8.94935 13.7371 10.2059 12.1667 10.2059H8.41667C8.29522 10.2059 8.17793 10.2501 8.08668 10.3302L5.16667 12.8953V10.7059Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>  
+                        </a>
+                    </span>
+                </div>
+            </div>      
+        </div> 
+        <div class="mynews-first">
+            <div class="loading">
+                    <img src="./images/img42.png" alt="" class="loading1">
+                    <img src="./images/Frame 387.png" alt="">
+            </div>      
+        </div>   
+    </div>
+
+    <div class="see-more">
+        <a href="" class="see-more-content">
+            <span class="xt">Xem thêm</span>
+            <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.73013 0.21967C1.03697 -0.0732233 1.53446 -0.0732233 1.8413 0.21967L6 4.18934L10.1587 0.21967C10.4655 -0.0732233 10.963 -0.0732233 11.2699 0.21967C11.5767 0.512563 11.5767 0.987437 11.2699 1.28033L6.55558 5.78033C6.24874 6.07322 5.75126 6.07322 5.44442 5.78033L0.73013 1.28033C0.42329 0.987437 0.42329 0.512563 0.73013 0.21967Z" fill="#333333"/>
+                </svg>                                    
+        </a>
+    </div>
+</div>  
+    
+<div class="next-content-right">
+    <div class="sknb">
+        <h3>
+            <a href="#">
+                Sự Kiện Nổi Bật
+            </a>
+        </h3>
+        <div class="sknb-item">
+            <div class="sknb-item1">
+                <a href="#">
+                    <img src="./images/img43.png" alt="" class="sknb-image">
+                </a>
+                <div class="sknb-content">
+                    <p class="sknb-subtitle">
+                        Chân dung tân chủ tịch hà nội chu ngọc anh
+                    </p>
+                        <a href="#" class="sknb-title">
+                            Ông Chu Ngọc Anh trở thành tân chủ tịch Hà Nội với số phiếu tối đa
+                        </a>
+                    <p class="sknb-link">
+                        Dân Trí · 1 giờ trước
+                    </p>
+                </div>
+                <div class="sknb-content-more">
+                    <a href="#"class="sknt-tlq">
+                        210 tin liên quan
+                    </a>
+                    <a href="#" class="sknt-copy">
+                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.04528 4.90909C7.34652 4.90909 7.59073 5.15329 7.59073 5.45454V10.3636C7.59073 10.6649 7.34652 10.9091 7.04528 10.9091H2.13619C1.83494 10.9091 1.59073 10.6649 1.59073 10.3636V5.45454C1.59073 5.15329 1.83494 4.90909 2.13619 4.90909H7.04528ZM8.68164 5.45454C8.68164 4.5508 7.94902 3.81818 7.04528 3.81818H2.13619C1.23245 3.81818 0.499823 4.5508 0.499823 5.45454V10.3636C0.499823 11.2674 1.23245 12 2.13619 12H7.04528C7.94902 12 8.68164 11.2674 8.68164 10.3636V5.45454Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.04528 4.90909C7.34652 4.90909 7.59073 5.15329 7.59073 5.45454V10.3636C7.59073 10.6649 7.34652 10.9091 7.04528 10.9091H2.13619C1.83494 10.9091 1.59073 10.6649 1.59073 10.3636V5.45454C1.59073 5.15329 1.83494 4.90909 2.13619 4.90909H7.04528ZM8.68164 5.45454C8.68164 4.5508 7.94902 3.81818 7.04528 3.81818H2.13619C1.23245 3.81818 0.499823 4.5508 0.499823 5.45454V10.3636C0.499823 11.2674 1.23245 12 2.13619 12H7.04528C7.94902 12 8.68164 11.2674 8.68164 10.3636V5.45454Z" fill="#1F9FFC"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8636 1.09091C11.0083 1.09091 11.147 1.14838 11.2493 1.25067C11.3516 1.35296 11.4091 1.4917 11.4091 1.63636V6.54545C11.4091 6.69012 11.3516 6.82886 11.2493 6.93115C11.147 7.03344 11.0083 7.09091 10.8636 7.09091H10.3182C10.0169 7.09091 9.77273 7.33512 9.77273 7.63636C9.77273 7.93761 10.0169 8.18182 10.3182 8.18182H10.8636C11.2976 8.18182 11.7138 8.00942 12.0207 7.70254C12.3276 7.39566 12.5 6.97945 12.5 6.54545V1.63636C12.5 1.20237 12.3276 0.786158 12.0207 0.47928C11.7138 0.172402 11.2976 0 10.8636 0H5.95455C5.52055 0 5.10434 0.172402 4.79746 0.47928C4.49058 0.786157 4.31818 1.20237 4.31818 1.63636V2.18182C4.31818 2.48306 4.56239 2.72727 4.86364 2.72727C5.16488 2.72727 5.40909 2.48306 5.40909 2.18182V1.63636C5.40909 1.4917 5.46656 1.35296 5.56885 1.25067C5.67114 1.14838 5.80988 1.09091 5.95455 1.09091H10.8636Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8636 1.09091C11.0083 1.09091 11.147 1.14838 11.2493 1.25067C11.3516 1.35296 11.4091 1.4917 11.4091 1.63636V6.54545C11.4091 6.69012 11.3516 6.82886 11.2493 6.93115C11.147 7.03344 11.0083 7.09091 10.8636 7.09091H10.3182C10.0169 7.09091 9.77273 7.33512 9.77273 7.63636C9.77273 7.93761 10.0169 8.18182 10.3182 8.18182H10.8636C11.2976 8.18182 11.7138 8.00942 12.0207 7.70254C12.3276 7.39566 12.5 6.97945 12.5 6.54545V1.63636C12.5 1.20237 12.3276 0.786158 12.0207 0.47928C11.7138 0.172402 11.2976 0 10.8636 0H5.95455C5.52055 0 5.10434 0.172402 4.79746 0.47928C4.49058 0.786157 4.31818 1.20237 4.31818 1.63636V2.18182C4.31818 2.48306 4.56239 2.72727 4.86364 2.72727C5.16488 2.72727 5.40909 2.48306 5.40909 2.18182V1.63636C5.40909 1.4917 5.46656 1.35296 5.56885 1.25067C5.67114 1.14838 5.80988 1.09091 5.95455 1.09091H10.8636Z" fill="#1F9FFC"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="12" height="12" fill="white" transform="matrix(-1 0 0 1 12.5 0)"/>
+                            </clipPath>
+                            </defs>
+                            </svg>       
+                    </a>
+                </div>
+            </div>
+            <div class="sknb-item1">
+                <a href="#">
+                    <img src="./images/img44.png" alt="" class="sknb-image">
+                </a>
+                <div class="sknb-content">
+                    <p class="sknb-subtitle">
+                        trump - biden chạy nước rút trước màn ‘so găng’ đầu tiên
+                    </p>
+                    <a href="#" class="sknb-title">
+                        Thượng viện Mỹ thông qua Nghị quyết ủng hộ chuyển giao quyền lực trong hòa bình
+                    </a>
+                    <p class="sknb-link">
+                        VOV · 1 giờ trước
+                    </p>
+                </div>
+                <div class="sknb-content-more">
+                    <a href="#"class="sknt-tlq">
+                        120 tin liên quan
+                    </a>
+                    <a href="#" class="sknt-copy">
+                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.04528 4.90909C7.34652 4.90909 7.59073 5.15329 7.59073 5.45454V10.3636C7.59073 10.6649 7.34652 10.9091 7.04528 10.9091H2.13619C1.83494 10.9091 1.59073 10.6649 1.59073 10.3636V5.45454C1.59073 5.15329 1.83494 4.90909 2.13619 4.90909H7.04528ZM8.68164 5.45454C8.68164 4.5508 7.94902 3.81818 7.04528 3.81818H2.13619C1.23245 3.81818 0.499823 4.5508 0.499823 5.45454V10.3636C0.499823 11.2674 1.23245 12 2.13619 12H7.04528C7.94902 12 8.68164 11.2674 8.68164 10.3636V5.45454Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.04528 4.90909C7.34652 4.90909 7.59073 5.15329 7.59073 5.45454V10.3636C7.59073 10.6649 7.34652 10.9091 7.04528 10.9091H2.13619C1.83494 10.9091 1.59073 10.6649 1.59073 10.3636V5.45454C1.59073 5.15329 1.83494 4.90909 2.13619 4.90909H7.04528ZM8.68164 5.45454C8.68164 4.5508 7.94902 3.81818 7.04528 3.81818H2.13619C1.23245 3.81818 0.499823 4.5508 0.499823 5.45454V10.3636C0.499823 11.2674 1.23245 12 2.13619 12H7.04528C7.94902 12 8.68164 11.2674 8.68164 10.3636V5.45454Z" fill="#1F9FFC"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8636 1.09091C11.0083 1.09091 11.147 1.14838 11.2493 1.25067C11.3516 1.35296 11.4091 1.4917 11.4091 1.63636V6.54545C11.4091 6.69012 11.3516 6.82886 11.2493 6.93115C11.147 7.03344 11.0083 7.09091 10.8636 7.09091H10.3182C10.0169 7.09091 9.77273 7.33512 9.77273 7.63636C9.77273 7.93761 10.0169 8.18182 10.3182 8.18182H10.8636C11.2976 8.18182 11.7138 8.00942 12.0207 7.70254C12.3276 7.39566 12.5 6.97945 12.5 6.54545V1.63636C12.5 1.20237 12.3276 0.786158 12.0207 0.47928C11.7138 0.172402 11.2976 0 10.8636 0H5.95455C5.52055 0 5.10434 0.172402 4.79746 0.47928C4.49058 0.786157 4.31818 1.20237 4.31818 1.63636V2.18182C4.31818 2.48306 4.56239 2.72727 4.86364 2.72727C5.16488 2.72727 5.40909 2.48306 5.40909 2.18182V1.63636C5.40909 1.4917 5.46656 1.35296 5.56885 1.25067C5.67114 1.14838 5.80988 1.09091 5.95455 1.09091H10.8636Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8636 1.09091C11.0083 1.09091 11.147 1.14838 11.2493 1.25067C11.3516 1.35296 11.4091 1.4917 11.4091 1.63636V6.54545C11.4091 6.69012 11.3516 6.82886 11.2493 6.93115C11.147 7.03344 11.0083 7.09091 10.8636 7.09091H10.3182C10.0169 7.09091 9.77273 7.33512 9.77273 7.63636C9.77273 7.93761 10.0169 8.18182 10.3182 8.18182H10.8636C11.2976 8.18182 11.7138 8.00942 12.0207 7.70254C12.3276 7.39566 12.5 6.97945 12.5 6.54545V1.63636C12.5 1.20237 12.3276 0.786158 12.0207 0.47928C11.7138 0.172402 11.2976 0 10.8636 0H5.95455C5.52055 0 5.10434 0.172402 4.79746 0.47928C4.49058 0.786157 4.31818 1.20237 4.31818 1.63636V2.18182C4.31818 2.48306 4.56239 2.72727 4.86364 2.72727C5.16488 2.72727 5.40909 2.48306 5.40909 2.18182V1.63636C5.40909 1.4917 5.46656 1.35296 5.56885 1.25067C5.67114 1.14838 5.80988 1.09091 5.95455 1.09091H10.8636Z" fill="#1F9FFC"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="12" height="12" fill="white" transform="matrix(-1 0 0 1 12.5 0)"/>
+                            </clipPath>
+                            </defs>
+                            </svg>       
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sknb ht">
+        <h3 class="ht1">
+            <a href="#">
+                Hậu trường
+            </a>
+        </h3>
+        <div class="sknb-item">
+            <div class="sknb-item1">
+                <a href="#">
+                    <img src="./images/img45.png" alt="">
+                </a>
+                <div class="sknb-content">
+                    <a href="#" class="sknb-title">
+                        Mới khoe body "rực lửa" trong loạt ảnh mặc như không mặc, Ngọc Trinh lại bị lộ thân hình trơ xương
+                    </a>
+                    <p class="sknb-subtitle">
+                        Bộ đồ mặc ở nhà đã phô bày body xương xẩu, thiếu sức sống hơn hẳn so với những hình ảnh mà Ngọc Trinh đăng tải trước đó.
+                    </p>   
+                </div>
+            </div>
+            <div class="sknb-item1">
+                <div class="ht-content">
+                    <a href="#" class="ht-content-title">
+                        Hình ảnh mẹ Trương Bá Chi ngồi hàng giờ đồng hồ chờ đón khách đi taxi được chia sẻ rộng rãi
+                    </a>
+                    <a href="#">
+                        <img src="./images/img46.png" alt="">
+                    </a>
+                </div>
+                <div class="ht-content">
+                    <a href="#" class="ht-content-title">
+                        Mỹ nam "Sở Kiều Truyện" Lâm Canh Tân lộ ảnh hẹn hò thân mật với hai cô gái khác nhau, netizen bàn...
+                    </a>
+                    <a href="#">
+                        <img src="./images/img47.png" alt="">
+                    </a>
+                </div>
+                <div class="ht-content">
+                    <a href="#" class="ht-content-title">
+                        Hồng Quế thả biểu cảm hả hê khi Lưu Đê Ly bị đánh ở phố Hàng Buồm
+                    </a>
+                    <a href="#">
+                        <img src="./images/img48.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <div class="sknb ht gt">
+        <h3 class="ht1">
+            <a href="#">
+                giải trí
+            </a>
+        </h3>
+        <div class="sknb-item">
+            <div class="sknb-item1">
+                <a href="#">
+                    <img src="./images/img49.png" alt="">
+                </a>
+                <div class="sknb-content">
+                    <a href="#" class="sknb-title">
+                        Bị nhắc khéo chỉ có hư danh chứ không biết diễn, Triệu Lệ Dĩnh được đạo diễn "Chân Hoàn truyện" minh oan
+                    </a>
+                    <p class="sknb-subtitle">
+                        Đạo diễn của "Hậu cung Chân Hoàn truyện" - Trịnh Hiểu Long đã dành nhiều lời khen cho Triệu Lệ Dĩnh.
+                    </p>   
+                </div>
+            </div>
+            <div class="sknb-item1">
+                <a href="#">
+                    <img src="./images/img50.png" alt="">
+                </a>
+                <div class="sknb-content">
+                    <a href="#" class="sknb-title">
+                        “Trời Hôm Nay Nhiều Mây Cực!": Lại một MV siêu đơn giản của Đen Vâu ra đời ở... trên trời
+                    </a>
+                    <p class="sknb-subtitle">
+                        Hết lên rừng rồi xuống biển, lần này Đen Vâu bay tận... lên trời để quay MV mới.
+                    </p>   
+                </div>
+            </div>
+            
+        </div>
+     </div> 
+     
+     <div class="sknb ht xh">
+        <h3 class="ht1">
+            <a href="#">
+                Xã hội
+            </a>
+        </h3>
+        <div class="sknb-item">
+            <div class="sknb-item1">
+                <div class="sknb-content">
+                    <a href="#" class="sknb-title">
+                        Mặc mưa rơi, sĩ tử Hà Nội vẫn kéo nhau đi Văn Miếu thắp hương cầu may trước "kỳ thi quan trọng nhất đời người", quyết tâm tuổi trẻ là đây chứ đâu!
+                    </a>
+                    <p class="sknb-subtitle">
+                        Bất chấp cơn mưa nặng hạt kéo dài, rất đông các sĩ tử cùng phụ huynh vẫn đến Văn Miếu...
+                    </p>   
+                </div>
+            </div>
+            <div class="sknb-item1">
+                <a href="#">
+                    <img src="./images/img51.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="xh-title">
+            <p class="xh-title-item">
+                <a href="">
+                    Sạt lở đất ở Lào Cai, 2 vợ chồng tử vong
+                </a>
+            </p>
+            <p class="xh-title-item">
+                <a href="">
+                    Các trung tâm thương mại, siêu thị ở Hà Nội nghiêm túc "kích hoạt" các biện pháp phòng dịch COVID-19: Rửa tay trước, mua sắm sau!
+                </a>
+            </p>
+            <p class="xh-title-item">
+                <a href="">
+                    Sau ca bệnh 714 ở Hà Nội, bác sĩ lưu ý những ai từng test nhanh âm tính: Vẫn có thể là người đang nhiễm bệnh, cần cách ly đủ 14 ngày
+                </a>
+            </p>
+        </div>
+     </div>
+
+     <div class="sknb ht xh tg">
+        <h3 class="ht1">
+            <a href="#">
+                thế giới
+            </a>
+        </h3>
+        <div class="sknb-item">
+            <div class="sknb-item1">
+                <div class="sknb-content">
+                    <a href="#" class="sknb-title">
+                        Lebanon bắt Tổng Giám đốc cảng Beirut cùng 15 nghi can
+                    </a>
+                    <p class="sknb-subtitle">
+                        16 nghi can, gồm cả Tổng Giám đốc cảng Beirut, đã bị bắt giữ do liên quan đến vụ nổ tại cảng này.
+                    </p>   
+                </div>
+            </div>
+            <div class="sknb-item1">
+                <a href="#">
+                    <img src="./images/img52.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="sknb-item">
+            <div class="sknb-item1">
+                <div class="sknb-content">
+                    <a href="#" class="sknb-title">
+                        Thảm họa trồng rừng ở TQ: Cây "chết như ngả rạ" mà không rõ nguyên nhân
+                    </a>
+                    <p class="sknb-subtitle">
+                        Bất chấp cơn mưa nặng hạt kéo dài, rất đông các sĩ tử cùng phụ huynh vẫn đến Văn Miếu...
+                    </p>   
+                </div>
+            </div>
+            <div class="sknb-item1">
+                <a href="#">
+                    <img src="./images/img53.png" alt="">
+                </a>
+            </div>
+        </div>
+     </div>
+
+     <div class="sknb cdnb">
+        <h3>
+            <a href="#">
+                Chủ đề Nổi Bật
+            </a>
+        </h3>
+            <div class="cdnb-item">
+                <div class="cdnb-title">
+                        <p class="sknb-subtitle">
+                            cháy khách sạn 5 tầng ở sài gòn, 2 người thương vong
+                        </p>
+                            <a href="#" class="sknb-title">
+                                Cháy khách sạn 5 tầng ở Sài Gòn, 2 người thương vong
+                            </a>
+                        <p class="sknb-link">
+                            <span>VOV · 1 giờ trước</span>
+                            <span>7 tin liên quan</span>
+                        </p>
+                </div>
+                <div class="cdnb-copy">
+                    <a href="#">
+                        <svg width="40" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.04528 4.90902C7.34652 4.90902 7.59073 5.15323 7.59073 5.45448V10.3636C7.59073 10.6648 7.34652 10.909 7.04528 10.909H2.13619C1.83494 10.909 1.59073 10.6648 1.59073 10.3636V5.45448C1.59073 5.15323 1.83494 4.90902 2.13619 4.90902H7.04528ZM8.68164 5.45448C8.68164 4.55074 7.94902 3.81812 7.04528 3.81812H2.13619C1.23245 3.81812 0.499823 4.55074 0.499823 5.45448V10.3636C0.499823 11.2673 1.23245 11.9999 2.13619 11.9999H7.04528C7.94902 11.9999 8.68164 11.2673 8.68164 10.3636V5.45448Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.04528 4.90902C7.34652 4.90902 7.59073 5.15323 7.59073 5.45448V10.3636C7.59073 10.6648 7.34652 10.909 7.04528 10.909H2.13619C1.83494 10.909 1.59073 10.6648 1.59073 10.3636V5.45448C1.59073 5.15323 1.83494 4.90902 2.13619 4.90902H7.04528ZM8.68164 5.45448C8.68164 4.55074 7.94902 3.81812 7.04528 3.81812H2.13619C1.23245 3.81812 0.499823 4.55074 0.499823 5.45448V10.3636C0.499823 11.2673 1.23245 11.9999 2.13619 11.9999H7.04528C7.94902 11.9999 8.68164 11.2673 8.68164 10.3636V5.45448Z" fill="#1F9FFC"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8636 1.09091C11.0083 1.09091 11.147 1.14838 11.2493 1.25067C11.3516 1.35296 11.4091 1.4917 11.4091 1.63636V6.54545C11.4091 6.69012 11.3516 6.82886 11.2493 6.93115C11.147 7.03344 11.0083 7.09091 10.8636 7.09091H10.3182C10.0169 7.09091 9.77273 7.33512 9.77273 7.63636C9.77273 7.93761 10.0169 8.18182 10.3182 8.18182H10.8636C11.2976 8.18182 11.7138 8.00942 12.0207 7.70254C12.3276 7.39566 12.5 6.97945 12.5 6.54545V1.63636C12.5 1.20237 12.3276 0.786158 12.0207 0.47928C11.7138 0.172402 11.2976 0 10.8636 0H5.95455C5.52055 0 5.10434 0.172402 4.79746 0.47928C4.49058 0.786157 4.31818 1.20237 4.31818 1.63636V2.18182C4.31818 2.48306 4.56239 2.72727 4.86364 2.72727C5.16488 2.72727 5.40909 2.48306 5.40909 2.18182V1.63636C5.40909 1.4917 5.46656 1.35296 5.56885 1.25067C5.67114 1.14838 5.80988 1.09091 5.95455 1.09091H10.8636Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8636 1.09091C11.0083 1.09091 11.147 1.14838 11.2493 1.25067C11.3516 1.35296 11.4091 1.4917 11.4091 1.63636V6.54545C11.4091 6.69012 11.3516 6.82886 11.2493 6.93115C11.147 7.03344 11.0083 7.09091 10.8636 7.09091H10.3182C10.0169 7.09091 9.77273 7.33512 9.77273 7.63636C9.77273 7.93761 10.0169 8.18182 10.3182 8.18182H10.8636C11.2976 8.18182 11.7138 8.00942 12.0207 7.70254C12.3276 7.39566 12.5 6.97945 12.5 6.54545V1.63636C12.5 1.20237 12.3276 0.786158 12.0207 0.47928C11.7138 0.172402 11.2976 0 10.8636 0H5.95455C5.52055 0 5.10434 0.172402 4.79746 0.47928C4.49058 0.786157 4.31818 1.20237 4.31818 1.63636V2.18182C4.31818 2.48306 4.56239 2.72727 4.86364 2.72727C5.16488 2.72727 5.40909 2.48306 5.40909 2.18182V1.63636C5.40909 1.4917 5.46656 1.35296 5.56885 1.25067C5.67114 1.14838 5.80988 1.09091 5.95455 1.09091H10.8636Z" fill="#1F9FFC"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="12" height="12" fill="white" transform="matrix(-1 0 0 1 12.5 0)"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                    </a>
+                        
+                </div>
+            </div>
+            <div class="cdnb-item">
+                <div class="cdnb-title">
+                        <p class="sknb-subtitle">
+                            cháy khách sạn 5 tầng ở sài gòn, 2 người thương vong
+                        </p>
+                            <a href="#" class="sknb-title">
+                                Cháy khách sạn 5 tầng ở Sài Gòn, 2 người thương vong
+                            </a>
+                        <p class="sknb-link">
+                            <span>VOV · 1 giờ trước</span>
+                            <span>7 tin liên quan</span>
+                        </p>
+                </div>
+                <div class="cdnb-copy">
+                    <a href="#">
+                        <svg width="40" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.04528 4.90902C7.34652 4.90902 7.59073 5.15323 7.59073 5.45448V10.3636C7.59073 10.6648 7.34652 10.909 7.04528 10.909H2.13619C1.83494 10.909 1.59073 10.6648 1.59073 10.3636V5.45448C1.59073 5.15323 1.83494 4.90902 2.13619 4.90902H7.04528ZM8.68164 5.45448C8.68164 4.55074 7.94902 3.81812 7.04528 3.81812H2.13619C1.23245 3.81812 0.499823 4.55074 0.499823 5.45448V10.3636C0.499823 11.2673 1.23245 11.9999 2.13619 11.9999H7.04528C7.94902 11.9999 8.68164 11.2673 8.68164 10.3636V5.45448Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.04528 4.90902C7.34652 4.90902 7.59073 5.15323 7.59073 5.45448V10.3636C7.59073 10.6648 7.34652 10.909 7.04528 10.909H2.13619C1.83494 10.909 1.59073 10.6648 1.59073 10.3636V5.45448C1.59073 5.15323 1.83494 4.90902 2.13619 4.90902H7.04528ZM8.68164 5.45448C8.68164 4.55074 7.94902 3.81812 7.04528 3.81812H2.13619C1.23245 3.81812 0.499823 4.55074 0.499823 5.45448V10.3636C0.499823 11.2673 1.23245 11.9999 2.13619 11.9999H7.04528C7.94902 11.9999 8.68164 11.2673 8.68164 10.3636V5.45448Z" fill="#1F9FFC"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8636 1.09091C11.0083 1.09091 11.147 1.14838 11.2493 1.25067C11.3516 1.35296 11.4091 1.4917 11.4091 1.63636V6.54545C11.4091 6.69012 11.3516 6.82886 11.2493 6.93115C11.147 7.03344 11.0083 7.09091 10.8636 7.09091H10.3182C10.0169 7.09091 9.77273 7.33512 9.77273 7.63636C9.77273 7.93761 10.0169 8.18182 10.3182 8.18182H10.8636C11.2976 8.18182 11.7138 8.00942 12.0207 7.70254C12.3276 7.39566 12.5 6.97945 12.5 6.54545V1.63636C12.5 1.20237 12.3276 0.786158 12.0207 0.47928C11.7138 0.172402 11.2976 0 10.8636 0H5.95455C5.52055 0 5.10434 0.172402 4.79746 0.47928C4.49058 0.786157 4.31818 1.20237 4.31818 1.63636V2.18182C4.31818 2.48306 4.56239 2.72727 4.86364 2.72727C5.16488 2.72727 5.40909 2.48306 5.40909 2.18182V1.63636C5.40909 1.4917 5.46656 1.35296 5.56885 1.25067C5.67114 1.14838 5.80988 1.09091 5.95455 1.09091H10.8636Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8636 1.09091C11.0083 1.09091 11.147 1.14838 11.2493 1.25067C11.3516 1.35296 11.4091 1.4917 11.4091 1.63636V6.54545C11.4091 6.69012 11.3516 6.82886 11.2493 6.93115C11.147 7.03344 11.0083 7.09091 10.8636 7.09091H10.3182C10.0169 7.09091 9.77273 7.33512 9.77273 7.63636C9.77273 7.93761 10.0169 8.18182 10.3182 8.18182H10.8636C11.2976 8.18182 11.7138 8.00942 12.0207 7.70254C12.3276 7.39566 12.5 6.97945 12.5 6.54545V1.63636C12.5 1.20237 12.3276 0.786158 12.0207 0.47928C11.7138 0.172402 11.2976 0 10.8636 0H5.95455C5.52055 0 5.10434 0.172402 4.79746 0.47928C4.49058 0.786157 4.31818 1.20237 4.31818 1.63636V2.18182C4.31818 2.48306 4.56239 2.72727 4.86364 2.72727C5.16488 2.72727 5.40909 2.48306 5.40909 2.18182V1.63636C5.40909 1.4917 5.46656 1.35296 5.56885 1.25067C5.67114 1.14838 5.80988 1.09091 5.95455 1.09091H10.8636Z" fill="#1F9FFC"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="12" height="12" fill="white" transform="matrix(-1 0 0 1 12.5 0)"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                    </a>
+                        
+                </div>
+            </div>
+            <div class="cdnb-item">
+                <div class="cdnb-title">
+                        <p class="sknb-subtitle">
+                            cháy khách sạn 5 tầng ở sài gòn, 2 người thương vong
+                        </p>
+                            <a href="#" class="sknb-title">
+                                Cháy khách sạn 5 tầng ở Sài Gòn, 2 người thương vong
+                            </a>
+                        <p class="sknb-link">
+                            <span>VOV · 1 giờ trước</span>
+                            <span>7 tin liên quan</span>
+                        </p>
+                </div>
+                <div class="cdnb-copy">
+                    <a href="#">
+                        <svg width="40" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.04528 4.90902C7.34652 4.90902 7.59073 5.15323 7.59073 5.45448V10.3636C7.59073 10.6648 7.34652 10.909 7.04528 10.909H2.13619C1.83494 10.909 1.59073 10.6648 1.59073 10.3636V5.45448C1.59073 5.15323 1.83494 4.90902 2.13619 4.90902H7.04528ZM8.68164 5.45448C8.68164 4.55074 7.94902 3.81812 7.04528 3.81812H2.13619C1.23245 3.81812 0.499823 4.55074 0.499823 5.45448V10.3636C0.499823 11.2673 1.23245 11.9999 2.13619 11.9999H7.04528C7.94902 11.9999 8.68164 11.2673 8.68164 10.3636V5.45448Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.04528 4.90902C7.34652 4.90902 7.59073 5.15323 7.59073 5.45448V10.3636C7.59073 10.6648 7.34652 10.909 7.04528 10.909H2.13619C1.83494 10.909 1.59073 10.6648 1.59073 10.3636V5.45448C1.59073 5.15323 1.83494 4.90902 2.13619 4.90902H7.04528ZM8.68164 5.45448C8.68164 4.55074 7.94902 3.81812 7.04528 3.81812H2.13619C1.23245 3.81812 0.499823 4.55074 0.499823 5.45448V10.3636C0.499823 11.2673 1.23245 11.9999 2.13619 11.9999H7.04528C7.94902 11.9999 8.68164 11.2673 8.68164 10.3636V5.45448Z" fill="#1F9FFC"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8636 1.09091C11.0083 1.09091 11.147 1.14838 11.2493 1.25067C11.3516 1.35296 11.4091 1.4917 11.4091 1.63636V6.54545C11.4091 6.69012 11.3516 6.82886 11.2493 6.93115C11.147 7.03344 11.0083 7.09091 10.8636 7.09091H10.3182C10.0169 7.09091 9.77273 7.33512 9.77273 7.63636C9.77273 7.93761 10.0169 8.18182 10.3182 8.18182H10.8636C11.2976 8.18182 11.7138 8.00942 12.0207 7.70254C12.3276 7.39566 12.5 6.97945 12.5 6.54545V1.63636C12.5 1.20237 12.3276 0.786158 12.0207 0.47928C11.7138 0.172402 11.2976 0 10.8636 0H5.95455C5.52055 0 5.10434 0.172402 4.79746 0.47928C4.49058 0.786157 4.31818 1.20237 4.31818 1.63636V2.18182C4.31818 2.48306 4.56239 2.72727 4.86364 2.72727C5.16488 2.72727 5.40909 2.48306 5.40909 2.18182V1.63636C5.40909 1.4917 5.46656 1.35296 5.56885 1.25067C5.67114 1.14838 5.80988 1.09091 5.95455 1.09091H10.8636Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8636 1.09091C11.0083 1.09091 11.147 1.14838 11.2493 1.25067C11.3516 1.35296 11.4091 1.4917 11.4091 1.63636V6.54545C11.4091 6.69012 11.3516 6.82886 11.2493 6.93115C11.147 7.03344 11.0083 7.09091 10.8636 7.09091H10.3182C10.0169 7.09091 9.77273 7.33512 9.77273 7.63636C9.77273 7.93761 10.0169 8.18182 10.3182 8.18182H10.8636C11.2976 8.18182 11.7138 8.00942 12.0207 7.70254C12.3276 7.39566 12.5 6.97945 12.5 6.54545V1.63636C12.5 1.20237 12.3276 0.786158 12.0207 0.47928C11.7138 0.172402 11.2976 0 10.8636 0H5.95455C5.52055 0 5.10434 0.172402 4.79746 0.47928C4.49058 0.786157 4.31818 1.20237 4.31818 1.63636V2.18182C4.31818 2.48306 4.56239 2.72727 4.86364 2.72727C5.16488 2.72727 5.40909 2.48306 5.40909 2.18182V1.63636C5.40909 1.4917 5.46656 1.35296 5.56885 1.25067C5.67114 1.14838 5.80988 1.09091 5.95455 1.09091H10.8636Z" fill="#1F9FFC"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="12" height="12" fill="white" transform="matrix(-1 0 0 1 12.5 0)"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="see-more">
+                <a href="" class="see-more-content">
+                    <span class="xt">Xem thêm</span>
+                    <div class="see-more-info">
+                        3
+                    </div>                                    
+                </a>
+            </div>
+    </div>
+    <div class="banner">
+        <a href="#">
+            <img src="./images/image 54.png" alt="">
+        </a>
+    </div>
+
+    <div class="lifestyle">
+        <div class="lscontent">
+            <div class="sknb ht ls">
+                <h3 class="ht1">
+                    <a href="#">
+                        lifestyle
+                    </a>
+                </h3>
+                <div class="sknb-item">
+                    <div class="sknb-item1">
+                        <a href="#">
+                            <img src="./images/img55.png" alt="">
+                        </a>
+                        <div class="sknb-content">
+                            <a href="#" class="sknb-title">
+                                Ngỡ ngàng với 2 nhà thờ màu tím và màu nâu đẹp như thánh đường châu Âu cổ tại Nghệ An, dân tình lại đứng ngồi không yên
+                            </a>
+                            <p class="sknb-subtitle">
+                                Bộ đồ mặc ở nhà đã phô bày body xương xẩu, thiếu sức sống hơn hẳn so với những hình ảnh mà Ngọc Trinh đăng...
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="ls-subcontent">
+                    <a href="#" class="ls-subcontent-title">
+                        MC Quyền Linh từng kiên quyết không cho con gái dùng mạng xã hội nhưng giờ đây cả Lọ Lem và...
+                    </a>
+                    <a href="#" class="ls-subcontent-image">
+                        <img src="./images/img56.png" alt="">
+                    </a>
+                </div>
+                <div class="ls-subcontent">
+                    <a href="#" class="ls-subcontent-title">
+                        Sài Gòn được dịp mát trời, nhanh chân đi "ăn sập thế giới" với 6 món ăn đường phố khiến bạn nuốt nước...
+                    </a>
+                    <a href="#" class="ls-subcontent-image">
+                        <img src="./images/img57.png" alt="">
+                    </a>
+                </div>
+             </div>
+             <div class="sknb ht ls">
+                <h3 class="ht1">
+                    <a href="#">
+                        lifestyle
+                    </a>
+                </h3>
+                <div class="sknb-item">
+                    <div class="sknb-item1">
+                        <a href="#">
+                            <img src="./images/img55.png" alt="">
+                        </a>
+                        <div class="sknb-content">
+                            <a href="#" class="sknb-title">
+                                Ngỡ ngàng với 2 nhà thờ màu tím và màu nâu đẹp như thánh đường châu Âu cổ tại Nghệ An, dân tình lại đứng ngồi không yên
+                            </a>
+                            <p class="sknb-subtitle">
+                                Bộ đồ mặc ở nhà đã phô bày body xương xẩu, thiếu sức sống hơn hẳn so với những hình ảnh mà Ngọc Trinh đăng...
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="ls-subcontent">
+                    <a href="#" class="ls-subcontent-title">
+                        MC Quyền Linh từng kiên quyết không cho con gái dùng mạng xã hội nhưng giờ đây cả Lọ Lem và...
+                    </a>
+                    <a href="#" class="ls-subcontent-image">
+                        <img src="./images/img56.png" alt="">
+                    </a>
+                </div>
+                <div class="ls-subcontent">
+                    <a href="#" class="ls-subcontent-title">
+                        Sài Gòn được dịp mát trời, nhanh chân đi "ăn sập thế giới" với 6 món ăn đường phố khiến bạn nuốt nước...
+                    </a>
+                    <a href="#" class="ls-subcontent-image">
+                        <img src="./images/img57.png" alt="">
+                    </a>
+                </div>
+             </div>
+             <div class="sknb ht ls">
+                <h3 class="ht1">
+                    <a href="#">
+                        lifestyle
+                    </a>
+                </h3>
+                <div class="sknb-item">
+                    <div class="sknb-item1">
+                        <a href="#">
+                            <img src="./images/img55.png" alt="">
+                        </a>
+                        <div class="sknb-content">
+                            <a href="#" class="sknb-title">
+                                Ngỡ ngàng với 2 nhà thờ màu tím và màu nâu đẹp như thánh đường châu Âu cổ tại Nghệ An, dân tình lại đứng ngồi không yên
+                            </a>
+                            <p class="sknb-subtitle">
+                                Bộ đồ mặc ở nhà đã phô bày body xương xẩu, thiếu sức sống hơn hẳn so với những hình ảnh mà Ngọc Trinh đăng...
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="ls-subcontent">
+                    <a href="#" class="ls-subcontent-title">
+                        MC Quyền Linh từng kiên quyết không cho con gái dùng mạng xã hội nhưng giờ đây cả Lọ Lem và...
+                    </a>
+                    <a href="#" class="ls-subcontent-image">
+                        <img src="./images/img56.png" alt="">
+                    </a>
+                </div>
+                <div class="ls-subcontent">
+                    <a href="#" class="ls-subcontent-title">
+                        Sài Gòn được dịp mát trời, nhanh chân đi "ăn sập thế giới" với 6 món ăn đường phố khiến bạn nuốt nước...
+                    </a>
+                    <a href="#" class="ls-subcontent-image">
+                        <img src="./images/img57.png" alt="">
+                    </a>
+                </div>
+             </div>
+             <div class="sknb ht ls">
+                <h3 class="ht1">
+                    <a href="#">
+                        lifestyle
+                    </a>
+                </h3>
+                <div class="sknb-item">
+                    <div class="sknb-item1">
+                        <a href="#">
+                            <img src="./images/img55.png" alt="">
+                        </a>
+                        <div class="sknb-content">
+                            <a href="#" class="sknb-title">
+                                Ngỡ ngàng với 2 nhà thờ màu tím và màu nâu đẹp như thánh đường châu Âu cổ tại Nghệ An, dân tình lại đứng ngồi không yên
+                            </a>
+                            <p class="sknb-subtitle">
+                                Bộ đồ mặc ở nhà đã phô bày body xương xẩu, thiếu sức sống hơn hẳn so với những hình ảnh mà Ngọc Trinh đăng...
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="ls-subcontent">
+                    <a href="#" class="ls-subcontent-title">
+                        MC Quyền Linh từng kiên quyết không cho con gái dùng mạng xã hội nhưng giờ đây cả Lọ Lem và...
+                    </a>
+                    <a href="#" class="ls-subcontent-image">
+                        <img src="./images/img56.png" alt="">
+                    </a>
+                </div>
+                <div class="ls-subcontent">
+                    <a href="#" class="ls-subcontent-title">
+                        Sài Gòn được dịp mát trời, nhanh chân đi "ăn sập thế giới" với 6 món ăn đường phố khiến bạn nuốt nước...
+                    </a>
+                    <a href="#" class="ls-subcontent-image">
+                        <img src="./images/img57.png" alt="">
+                    </a>
+                </div>
+             </div>
+             
+        </div>
+        <div class="lsads">
+            <div class="lsads1">
+                <a href="#">
+                    <img src="./images/image 58.png" alt="">
+                </a>
+            </div>
+            <div class="lsads1"> 
+                <a href="#">
+                    <img src="./images/image 59.png" alt="">
+                </a>
+            </div>
+            <div class="lsads1">
+                <a href="#">
+                    <img src="./images/image 60.png" alt="">
+                </a>
+            </div>
+            <div class="lsads1">
+                <a href="#">
+                    <img src="./images/image 61.png" alt="">
+                </a>
+            </div>
+            <div class="lsads1">
+                <a href="#">
+                    <img src="./images/image 62.png" alt="">
+                </a>
+            </div>
+            <div class="lsads1">
+                <a href="#">
+                    <img src="./images/image 63.png" alt="">
+                </a>
+            </div>
+            <!-- <a href="#">
+                <img src="./images/image 59.png" alt="">
+            </a>
+            <a href="#">
+                <img src="./images/image 60.png" alt="">
+            </a>
+            <a href="#">
+                <img src="./images/image 61.png" alt="">
+            </a>
+            <a href="#">
+                <img src="./images/image 62.png" alt="">
+            </a>
+            <a href="#">
+                <img src="./images/image 63.png" alt="">
+            </a> -->
+        </div>
+    </div>  
+    </div>
+
+                            
+
+                        
+
+                         
+                    </div>
+
+                </div>
+                        
+                    </div>
+                </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="ads">
+            <div class="banner">
+                <img src="./images/image 1.png" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-left">
+                <p class="slogan">
+                    Pega - Đọc báo không giới hạn
+                </p>
+                <p class="address">
+                    Địa chỉ: Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội
+                </p>
+                <div class="link-down">
+                    <a href="#">
+                        <img src="./images/image 43.png" alt="" class="app">
+                    </a>
+                    <a href="#">
+                        <img src="./images/image 44.png" alt="" class="app">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <img src="./images/Frame.png" alt="">       
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

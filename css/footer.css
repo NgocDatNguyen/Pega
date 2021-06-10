@@ -1,0 +1,59 @@
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-bottom: 21px;
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .footer-left .slogan {
+    font-family: SFPD-SemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height, or 133% */
+  
+  letter-spacing: 0.1px;
+  
+  /* #111 */
+  
+  color: #111111;
+  margin: 10px 0px;
+  
+  }
+  
+  .footer-left .address {
+    font-family: SFPD-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height, or 123% */
+  
+  letter-spacing: 0.2px;
+  
+  /* #888 */
+  
+  color: #888888;
+  margin: 10px 0px;
+  }
+  
+  .footer-left .link-down .app {
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 101px;
+  height: 29px;
+  }
+  
+  .footer-right {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  
